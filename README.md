@@ -1,6 +1,5 @@
 # Rabbit Hole Wanderer
 
-![Rabbit Hole Wanderer](path_to_your_image_here.png)
 
 ## "If you go down a rabbit hole, be sure to come back with the rabbit"
 
