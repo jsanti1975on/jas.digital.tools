@@ -18,8 +18,6 @@ In our fast-paced world, it's easy to skim the surface of a topic without truly 
 ### Conclusion
 
 While it's important to explore and investigate, always remember the purpose of your journey. Whether it's knowledge, a solution, or a new skill, make sure to "come back with the rabbit."
-
 ---
-
 *This project is a reminder to always strive for depth in your work and to ensure that your efforts lead to valuable outcomes.*
 ![RabbitWholeWander_1st_Draft](https://github.com/user-attachments/assets/2f890faa-d21e-4519-a5b8-39adf0c35de6)
