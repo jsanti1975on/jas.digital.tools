@@ -154,7 +154,7 @@ Private Sub ResetForm()
     lblNotes.Visible = True
 End Sub
 
----
+```
 
 ### Explanation:
 - This markdown file provides an overview of the **FinanceLogger**, its features, setup steps, and a guide on how to create and configure the form in Excel.
