@@ -56,7 +56,7 @@ All log data is saved to a worksheet named `CustomerServiceLogger`. The structur
 4. Paste the following VBA code in the `UserForm` code module:
 
 ```vba
-    ' Missing With statment for cmbLog 
+    ' Missing With statment for cmbType "Food" "Non-Food" 
 Private Sub UserForm_Initialize()
     ' Initialize form controls and setup the UI
     With cmbLogType
@@ -68,6 +68,14 @@ Private Sub UserForm_Initialize()
         .AddItem "Anomalies"
         .AddItem "Reconcile"
     End With
+
+    ' Added by mobile device
+    With cmbType
+        .Clear
+        .AddItem "Food"
+        .AddItem "Non-Food"
+    End With 
+
     ' Ensure txtNotes is visible for all entries
     txtNotes.Visible = True
     lblNotes.Visible = True
