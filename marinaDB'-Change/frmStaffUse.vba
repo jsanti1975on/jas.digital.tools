@@ -1,6 +1,7 @@
 Option Explicit
 ' This is the process to add multiple slips for follow up or overnight
-' This form needs to be seperate from Customer Servive use forms
+' This form needs to be seperate from Customer Service use forms
+' This form will be used by Waterfront Operations Staff
 Private Sub cmdBetaTutarial_Click()
     mainTutorial.Show
 End Sub
