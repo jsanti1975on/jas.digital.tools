@@ -1,7 +1,5 @@
 Option Explicit
-' This is the process to add multiple slips for follow up or overnight
-' This form needs to be seperate from Customer Service use forms
-' This form will be used by Waterfront Operations Staff
+
 Private Sub cmdBetaTutarial_Click()
     mainTutorial.Show
 End Sub
@@ -14,19 +12,7 @@ Private Sub cmdClearAllCheckboxes_Click()
     ClearAllCheckboxes
 End Sub
 
-Private Sub ClearAllCheckboxes()
-    Dim i As Integer
-    Dim chkBoxName As String
-    
-    ' Loop through checkboxes 1 to 80 and reset them
-    For i = 1 To 80
-        chkBoxName = "Checkbox" & i
-        If Not Me.Controls(chkBoxName) Is Nothing Then
-            Me.Controls(chkBoxName).Value = False
-            Me.Controls(chkBoxName).BackColor = &H8000000F ' Default system color
-        End If
-    Next i
-End Sub
+
 
 Private Sub cmdDataRetTool_Click()
     UserForm1.Show
@@ -125,21 +111,25 @@ Private Sub ApplyCheckboxColors()
 End Sub
 
 Private Sub UserForm_Initialize()
+    ' Clear all checkboxes to start with a fresh form
+    ClearAllCheckboxes
+    
+    ' Apply initial checkbox logic from TestSheet
     Dim ws As Worksheet
     Dim i As Integer
     Dim chkBoxName As String
     Dim cellValue As String
     
-    ' Set reference to TestSheet for initial checkbox setup
-    Set ws = Worksheets("TestSheet")
+    ' Set reference to TestSheet to initialize checkboxes based on data
+    Set ws = ThisWorkbook.Sheets("TestSheet")
     
-    ' Loop through rows to set up checkboxes based on initial data in TestSheet
+    ' Loop through the rows to initialize checkboxes based on values in TestSheet
     For i = 1 To 80
         chkBoxName = "Checkbox" & i
         If Not Me.Controls(chkBoxName) Is Nothing Then
             cellValue = Trim(ws.Cells(i, 1).Value)
             
-            ' Set initial color and state for each checkbox
+            ' Apply color and state based on the status in TestSheet
             Select Case True
                 Case cellValue = "Open_Slip"
                     Me.Controls(chkBoxName).Value = False
@@ -153,7 +143,7 @@ Private Sub UserForm_Initialize()
                 Case cellValue = "Follow-Up"
                     Me.Controls(chkBoxName).Value = True
                     Me.Controls(chkBoxName).BackColor = RGB(0, 0, 255) ' Blue for Follow-Up
-                Case InStr(cellValue, ",") > 0
+                Case InStr(cellValue, ",") > 0 ' Name format detected
                     Me.Controls(chkBoxName).Value = True
                     Me.Controls(chkBoxName).BackColor = RGB(255, 0, 0) ' Red for names
                 Case Else
@@ -163,3 +153,18 @@ Private Sub UserForm_Initialize()
         End If
     Next i
 End Sub
+Private Sub ClearAllCheckboxes()
+    Dim i As Integer
+    Dim chkBoxName As String
+    
+    ' Loop through checkboxes 1 to 80 to reset them
+    For i = 1 To 80
+        chkBoxName = "Checkbox" & i
+        If Not Me.Controls(chkBoxName) Is Nothing Then
+            Me.Controls(chkBoxName).Value = False
+            Me.Controls(chkBoxName).BackColor = &H8000000F ' Default system color
+        End If
+    Next i
+End Sub
+
+
