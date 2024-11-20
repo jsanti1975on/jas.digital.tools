@@ -1,3 +1,5 @@
+## Testing 11-20-2024 `After Lunch` `Created during lunch break`
+
 # Objects Needed on the Form
 
 | **Control Name**       | **Type**          | **Purpose**                                                      |
@@ -101,8 +103,8 @@ Private Sub cmdReset_Click()
 
         ' Populate the Specialist combo box
         .cmbSpecialist.AddItem "Jason"
-        .cmbSpecialist.AddItem "Andrew"
-        .cmbSpecialist.AddItem "Chris"
+        .cmbSpecialist.AddItem "User1"
+        .cmbSpecialist.AddItem "User2"
         .cmbSpecialist.AddItem "Ops.Sup."
         .cmbSpecialist.AddItem "Ops.Manager"
 
