@@ -1,4 +1,4 @@
-## Testing 11-20-2024 `After Lunch` `Created during lunch break`
+## Testing 11-20-2024 `After Lunch` | `Created during lunch break`
 
 # Objects Needed on the Form
 
