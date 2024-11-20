@@ -1,6 +1,6 @@
 Option Explicit
 
-' Shared Sub to handle visibility logic when conditions are met
+' Shared Sub to handle visibility and background color logic
 Private Sub CheckOtherCondition()
     If cmbSubject.Value = "Other" And cmbNoteType.Value = "Other" Then
         ' Both conditions are met
@@ -22,6 +22,12 @@ Private Sub HideControls()
     cmbSubject.Visible = False
     lblNoteType.Visible = False
     cmbNoteType.Visible = False
+    lblSubmitData.Visible = False
+    lblReadNotes.Visible = False
+
+    ' Change background color to default for Submit and Read Notes buttons
+    cmdSubmit.BackColor = RGB(255, 255, 255) ' Default white
+    cmdReadNotes.BackColor = RGB(255, 255, 255) ' Default white
 
     ' Show only relevant controls for "Other"
     txtNotes.Visible = True
@@ -32,7 +38,7 @@ Private Sub HideControls()
     txtSlipNumber.BackColor = RGB(211, 211, 211) ' Light gray
 End Sub
 
-' Reset all controls to default visibility
+' Reset all controls to default visibility and styles
 Private Sub ResetControls()
     lblSlipNumber.Visible = True
     txtSlipNumber.Visible = True
@@ -43,6 +49,12 @@ Private Sub ResetControls()
     cmbSubject.Visible = True
     lblNoteType.Visible = True
     cmbNoteType.Visible = True
+    lblSubmitData.Visible = True
+    lblReadNotes.Visible = True
+
+    ' Restore background color for Submit and Read Notes buttons
+    cmdSubmit.BackColor = RGB(240, 240, 240) ' Default system button color
+    cmdReadNotes.BackColor = RGB(240, 240, 240) ' Default system button color
 
     ' Hide "Other" specific controls
     txtNotes.Visible = True
@@ -79,9 +91,9 @@ Private Sub cmdReset_Click()
         .cmbNoteType.AddItem "Other"
 
         ' Populate the Specialist dropdown
-        .cmbSpecialist.AddItem "Jason Santiago"
-        .cmbSpecialist.AddItem "User1"
-        .cmbSpecialist.AddItem "User2"
+        .cmbSpecialist.AddItem "Jason"
+        .cmbSpecialist.AddItem "Andrew"
+        .cmbSpecialist.AddItem "Chris"
         .cmbSpecialist.AddItem "Ops.Sup."
         .cmbSpecialist.AddItem "Ops.Manager"
 
