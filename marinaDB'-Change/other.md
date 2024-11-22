@@ -1,7 +1,7 @@
 # Steps to Set Up the `frmOtherNotes` Form
 
 
-' The SUB is the working sub from home debugger - also note that the name of the form does not matter here
+# The SUB is the working sub from home debugger - also note that the name of the form does not matter here
 ---
 
 ## 1. Add the Required Controls to the Form
