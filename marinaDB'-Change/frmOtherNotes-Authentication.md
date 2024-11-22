@@ -1,6 +1,6 @@
 # Updated Code for `frmOtherNotes`
 
-Here’s the revised logic to include the PIN pad authentication:
+## Authentication process to be tested
 
 ```vba
 Option Explicit
