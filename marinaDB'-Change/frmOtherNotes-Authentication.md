@@ -13,6 +13,7 @@ Private Sub CheckOtherCondition()
         
         ' Launch PIN pad authentication
         frmSpecialistLoggerPinPad.Show
+        ' May need to debug here - uses not hide controls but `unload me` meaning the frmOtherNotes - if authentication is correct then show form frmOtherNotes 
         
         ' Hide irrelevant controls after authentication
         HideControls
