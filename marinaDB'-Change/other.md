@@ -1,6 +1,6 @@
 # Steps to Set Up the `frmOtherNotes` Form
 
-Below are the steps to configure the `frmOtherNotes` form as described in the provided code.
+
 ' The SUB is the working sub from home debugger - also note that the name of the form does not matter here
 ---
 
