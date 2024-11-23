@@ -132,10 +132,15 @@ Private Sub HideControls()
     cmbNoteType.Visible = False
     lblSubmitData.Visible = False
     lblReadNotes.Visible = False
+    lblEnterNoteBelow.Visible = False
+    cmdSubmit.Visible = False
+    cmdReadNotes.Visible = False
+    
 
     ' Change background color to default for Submit and Read Notes buttons
-    cmdSubmit.BackColor = RGB(255, 255, 255) ' Default white
-    cmdReadNotes.BackColor = RGB(255, 255, 255) ' Default white
+    cmdSubmit.BackColor = RGB(128, 128, 128) '
+    cmdReadNotes.BackColor = RGB(128, 128, 128) '
+    
 
     ' Show only relevant controls for "Other"
     txtNotes.Visible = True
@@ -159,7 +164,7 @@ Private Sub ResetControls()
     cmbNoteType.Visible = True
     lblSubmitData.Visible = True
     lblReadNotes.Visible = True
-
+    cmdReadNotes.Visible = True
     ' Restore background color for Submit and Read Notes buttons
     cmdSubmit.BackColor = RGB(240, 240, 240) ' Default system button color
     cmdReadNotes.BackColor = RGB(240, 240, 240) ' Default system button color
@@ -178,6 +183,46 @@ End Sub
 ' Handle changes in Note Type dropdown
 Private Sub cmbNoteType_Change()
     CheckOtherCondition
+End Sub
+
+Private Sub cmdReadNotes_Click()
+    Dim saveNumber As String
+    Dim noteText As String
+    Dim iRow As Variant
+    Dim sh As Worksheet
+    
+    ' Prompt the user to enter a save number
+    ' 10-17-2024 -- Use a txtBox form control for future use of `MaxChar`
+    saveNumber = InputBox("Enter the save number to read the note:", "Read Note")
+    
+    ' Validate the input
+    If saveNumber = "" Then Exit Sub
+    If Not IsNumeric(saveNumber) Then
+        MsgBox "Please enter a valid numeric save number .", vbExclamation, "Invalid Input"
+        Exit Sub
+    End If
+    
+    Set sh = ThisWorkbook.Sheets("TenantLogger")
+    
+    ' Find the corresponding row related to the save number
+    On Error Resume Next
+    iRow = Application.Match(CLng(saveNumber), sh.Range("A:A"), 0)
+    On Error GoTo 0
+    
+    If IsError(iRow) Then
+        MsgBox "Save number not found.", vbExclamation, "Error"
+        Exit Sub
+    End If
+    
+    ' Retrieve the note in the corresponding column
+    noteText = sh.Cells(iRow, 7).Value
+    
+    ' Display the note in a message box
+    If noteText <> "" Then
+        MsgBox "Note for Save Number " & saveNumber & ": " & vbCrLf & vbCrLf & noteText, vbInformation, "Note Details"
+    Else
+        MsgBox "No note found for Save Number " & saveNumber, vbInformation, "No Note"
+    End If
 End Sub
 
 ' Reset form to default state
@@ -211,6 +256,9 @@ Private Sub cmdReset_Click()
         .cmbSubject.AddItem "Overnight Paid"
         .cmbSubject.AddItem "Slip Change"
         .cmbSubject.AddItem "Other" ' Includes "Other"
+        
+        ' Populate Label
+        lblEnterNoteBelow.Visible = True
 
         ' Reset ListBox setup
         .lstTenantNotes.ColumnCount = 6
@@ -243,6 +291,7 @@ Private Sub cmdOtherNoteSubmit_Click()
         .Cells(iRow, 1).Value = iRow - 1 ' Save Number
         .Cells(iRow, 4).Value = "Other" ' Subject
         .Cells(iRow, 2).Value = "Other" ' Note Type
+        .Cells(iRow, 6).Value = Now()
         .Cells(iRow, 7).Value = Me.txtNotes.Value ' Notes
     End With
 
@@ -255,10 +304,72 @@ ErrorHandler:
     MsgBox "An error occurred while saving the note.", vbCritical, "Error"
 End Sub
 
+Private Sub cmdSubmit_Click()
+    ' Call the SubmitTenantData subroutine when the button is clicked
+    SubmitTenantData
+End Sub
+Private Sub SubmitTenantData()
+    Dim sh As Worksheet
+    Dim iRow As Long
+    Dim slipNumber As String
+    Dim noteText As String
+    
+    ' Get the slip number from the form
+    slipNumber = Me.txtSlipNumber.Value
+    
+    ' Validate the slip number
+    If Not IsValidSlipNumber(slipNumber) Then
+        Exit Sub ' If validation fails, exit the subroutine
+    End If
+    
+    ' Get the note text from the form
+    noteText = Me.txtNotes.Value
+    
+    ' Validate the length of the note {^_^}LOOKEY_FLAG since we know the max limit was reached this procedure was not called. 65 changed to 200 on 10-18-2024
+    
+    If Len(noteText) > 200 Then
+        MsgBox "The note exceeds the maximum allowed length of 200 characters.", vbExclamation, "Character Limit Reached"
+        Exit Sub ' Exit the subroutine if the note is too long
+    End If
+    
+    On Error GoTo ErrorHandler ' Enable error handling
+    
+    Set sh = ThisWorkbook.Sheets("TenantLogger")
+    iRow = [CountA(TenantLogger!A:A)] + 1
+    
+    ' Try to write data to the worksheet
+    With sh
+        .Cells(iRow, 1).Value = iRow - 1                                           ' Save Number
+        .Cells(iRow, 2).Value = Me.cmbNoteType                                     ' Note Type (from memory)//8/29/24 update code not call from memory changed back to default
+        .Cells(iRow, 3).Value = slipNumber                                         ' Slip Number
+        .Cells(iRow, 4).Value = Me.cmbSubject.Value                                ' Subject
+        .Cells(iRow, 5).Value = Me.cmbSpecialist.Value                             ' Specialist
+        .Cells(iRow, 6).Value = Now()                                              ' Timestamp
+        .Cells(iRow, 7).Value = noteText                                           ' Notes
+    End With
+    
+    ' Display confirmation message
+    MsgBox "Data has been successfully submitted for Slip Number " & slipNumber & ".", vbInformation, "Submission Confirmed"
+    
+    ' Unload the form after submission is confirmed
+    Unload Me
+
+    ' Optionally, make the Excel application visible again
+    Application.Visible = True
+    
+    Exit Sub ' Exit to avoid triggering the error handler after successful completion
+
+ErrorHandler:
+    MsgBox "An error occurred while submitting the data. Please check the Slip Number and try again.", _
+           vbCritical, "Error"
+End Sub
+
 ' Initialize form on load
 Private Sub UserForm_Initialize()
     cmdReset_Click ' Reset form on initialize
 End Sub
+
+
 
 
 ```
