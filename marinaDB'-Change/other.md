@@ -107,7 +107,8 @@ End Sub
 
 ```
 Option Explicit
-
+' I tweaked some of the labels, added Now() to time stamp other logs outside of slip number
+' The form was changed a bit and will be saved as `other` in 365
 ' Shared Sub to handle visibility and background color logic
 Private Sub CheckOtherCondition()
     If cmbSubject.Value = "Other" And cmbNoteType.Value = "Other" Then
