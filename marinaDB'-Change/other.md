@@ -245,8 +245,8 @@ Private Sub cmdReset_Click()
 
         ' Populate the Specialist dropdown
         .cmbSpecialist.AddItem "Jason"
-        .cmbSpecialist.AddItem "Andrew"
-        .cmbSpecialist.AddItem "Chris"
+        .cmbSpecialist.AddItem "redacted"
+        .cmbSpecialist.AddItem "redacted"
         .cmbSpecialist.AddItem "Ops.Sup."
         .cmbSpecialist.AddItem "Ops.Manager"
 
