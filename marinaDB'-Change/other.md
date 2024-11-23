@@ -25,7 +25,7 @@
 | `cmdOtherNoteSubmit`      | CommandButton   | Button to submit data specifically for "Other" notes.           |
 | `cmdReset`                | CommandButton   | Button to reset the form to its default state.                  |
 | `lstTenantNotes`          | ListBox         | Optional: Displays logged tenant notes.                         |
-
+| `lblEnterNoteBelow`       
 ---
 
 ## 2. Initialize the Form Controls
