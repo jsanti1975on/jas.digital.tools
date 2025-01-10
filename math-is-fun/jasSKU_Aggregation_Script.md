@@ -1,6 +1,8 @@
 # Excel Office Script: SKU Data Aggregation and Analysis | Weighted Mean Average
 
-## Key Features
+## "SKU Data Aggregator with Weighted Average Cost"
+
+### Key Features
 
 1. Input Data Parsing: Processes input data from the input worksheet within a predefined range `(A1:I24)`.
 2. SKU Aggregation:
