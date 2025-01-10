@@ -79,7 +79,7 @@
 ---------------------------------------------------------------------------------------------------------------------
 
 **How to Use**
-1. Open your Excel workbook and ensure:
+1. User is prompted or provides an answer to a question on the `input` sheet (e.g. How many packages counted?)
 - The `input` worksheet contains your data.
 - The `output` worksheet is available for writing results.
 - *Jason's. Notes => the workbook handle some work for double checking*
