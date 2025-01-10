@@ -83,7 +83,7 @@
 - The `input` worksheet contains your data.
 - The `output` worksheet is available for writing results.
 - *Jason's. Notes => the workbook handle some work for double checking*
-3. Run the script to process and output the aggregated data.
+2. Run the script to process and output the aggregated data.
 
 ---------------------------------------------------------------------------------------------------------------------
 
