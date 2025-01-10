@@ -88,7 +88,7 @@
 ---------------------------------------------------------------------------------------------------------------------
 
 **Why Use This Script?**
-- Automates complex SKU data aggregation tasks.
+- Automates any complexity SKU data aggregation tasks.
 - Ensures accurate calculations with weighted averages.
 - Reduces manual effort and minimizes errors in financial or inventory reports.
 
