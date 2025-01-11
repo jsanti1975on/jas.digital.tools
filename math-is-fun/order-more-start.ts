@@ -8,13 +8,17 @@ function main(workbook: ExcelScript.Workbook) {
     Medium: "E",
     Large: "G",
     "1XL": "I",
-    "2X": "K", // {^_^}LOOKEY_FLAG => 2X - 3X are valued in cost higher
+    "2X": "K", // 2X and 3X are valued higher
     "3X": "M",
   };
 
+  // Fetch color names from column A (rows A1:A5)
+  const colorRange = sheet.getRange("A1:A5");
+  const colorNames = colorRange.getValues().map(row => row[0] as string); // Extract color names as strings
+
   // Initialize the report header
   let reportContent = "INVENTORY REPORT\n\n";
-  reportContent += "This report summarizes the inventory status for all sizes.\n";
+  reportContent += "This report summarizes the inventory status for all sizes and colors.\n";
   reportContent += "----------------------------------------------\n\n";
 
   // Loop through each size and generate the report content
@@ -27,9 +31,10 @@ function main(workbook: ExcelScript.Workbook) {
     reportContent += `Size: ${size}\n`;
     reportContent += "-----------------\n";
 
-    // Loop through rows to add on-hand counts and calculate order amounts
+    // Loop through rows to add on-hand counts, order amounts, and color names
     counts.forEach((row, index) => {
-      let onhand = row[0]; // Value from the cell
+      let onhand = row[0] as number; // Cast to number for arithmetic operations
+      const color = colorNames[index]; // Get the corresponding color name
 
       // Ensure the on-hand count does not exceed 6
       if (onhand > 6) {
@@ -42,8 +47,8 @@ function main(workbook: ExcelScript.Workbook) {
         orderAmount = 6 - onhand; // Calculate the difference (6 - current on-hand)
       }
 
-      // Add the on-hand and order amount info to the report
-      reportContent += `Row ${index + 2}: On-hand count = ${onhand}, Order-More count = ${orderAmount}\n`;
+      // Add the color, on-hand, and order amount info to the report
+      reportContent += `Row ${index + 2}: Color = ${color}, On-hand count = ${onhand}, Order-More count = ${orderAmount}\n`;
     });
 
     reportContent += "\n"; // Add a blank line after each size
@@ -56,6 +61,6 @@ function main(workbook: ExcelScript.Workbook) {
   // Output the report content to the console
   console.log(reportContent);
 
-  // The optional notification feature is currently disabled
-  // workbook.getApplication().showNotification("Polo inventory report generated. Copy it from the console.");
+  // Optional: Notify the user that the report is ready
+  workbook.getApplication().showNotification("Polo inventory report generated. Copy it from the console.");
 }
