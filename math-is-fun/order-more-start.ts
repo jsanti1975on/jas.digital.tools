@@ -12,8 +12,8 @@ function main(workbook: ExcelScript.Workbook) {
     "3X": "M",
   };
 
-  // Fetch color names from column A (rows A1:A5)
-  const colorRange = sheet.getRange("A1:A5");
+  // Fetch color names from column A, skipping the header row
+  const colorRange = sheet.getRange("A2:A6"); // Start from row 2 to exclude the header
   const colorNames = colorRange.getValues().map(row => row[0] as string); // Extract color names as strings
 
   // Initialize the report header
@@ -23,8 +23,8 @@ function main(workbook: ExcelScript.Workbook) {
 
   // Loop through each size and generate the report content
   for (const [size, column] of Object.entries(sizeColumns)) {
-    // Read the count entered by the specialist
-    const countRange = sheet.getRange(`${column}2:${column}5`);
+    // Read the count entered by the specialist, skipping the header row
+    const countRange = sheet.getRange(`${column}2:${column}6`); // Start from row 2
     const counts = countRange.getValues();
 
     // Add size header to the report
