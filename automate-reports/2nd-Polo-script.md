@@ -1,7 +1,15 @@
 # This is the polo script => to be more report like.
 
 ```
+
+https://github.com/user-attachments/assets/88db00d4-295b-4b26-8cfa-a66666071eee
+
+
 function main(workbook: ExcelScript.Workbook) {
+
+https://github.com/user-attachments/assets/af9ba8fc-ad4a-4e18-843b-1cde70f0fa65
+
+
     // Define the active worksheet and data structure
     const sheet = workbook.getActiveWorksheet();
 
