@@ -8,7 +8,11 @@ This script marks the final step in the Polo Count process. In the next phase, t
 - **Stock Math Logic**: The calculation assumes a total of six Polo shirts on hand. If the count is less than six, the script calculates the difference and includes it in the report.
 - **Detailed Report**: The script generates a professional inventory report, summarizing stock levels, order recommendations, and color-specific details.
 
-![Script Demo](https://github.com/user-attachments/assets/6a4ab4cc-5356-49ea-bb5e-868f8d725d73)
+
+
+https://github.com/user-attachments/assets/faa24bb9-06cc-484a-97fc-0200ba256788
+
+
 
 ---
 
