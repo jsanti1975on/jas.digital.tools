@@ -1,3 +1,10 @@
+
+
+https://github.com/user-attachments/assets/6a4ab4cc-5356-49ea-bb5e-868f8d725d73
+
+
+
+
 ```
 function main(workbook: ExcelScript.Workbook) {
     // Define the active worksheet and data structure
