@@ -27,21 +27,26 @@ function main(workbook: ExcelScript.Workbook) {
     const countCell = sheet.getRange(`${column}2`);
     let onhand = countCell.getValue() as number; // Cast to number
 
-    // Ensure the on-hand count does not exceed 6
-    if (onhand > 6) {
-      onhand = 6; // Cap the count at 6
+    // Check if the count exceeds the cap
+    const exceedsCap = onhand > 6;
+
+    // Apply the cap for calculations
+    let cappedOnHand = onhand;
+    if (exceedsCap) {
+      cappedOnHand = 6; // Cap the count at 6 for calculations
     }
 
-    // Calculate the order amount if on-hand count is less than 4
+    // Calculate the order amount if capped on-hand count is less than 4
     let orderAmount = 0;
-    if (onhand < 4) {
-      orderAmount = 6 - onhand; // Calculate the difference (6 - current on-hand)
+    if (cappedOnHand < 4) {
+      orderAmount = 6 - cappedOnHand; // Calculate the difference (6 - current on-hand)
     }
 
     // Add the size, on-hand, and order amount info to the report
     reportContent += `Size: ${size}\n`;
     reportContent += `Color: ${colorName}\n`;
-    reportContent += `On-hand count: ${onhand}\n`;
+    reportContent += `On-hand count: ${onhand} ${exceedsCap ? "(Exceeds cap!)" : ""}\n`;
+    reportContent += `Capped count used for calculations: ${cappedOnHand}\n`;
     reportContent += `Order-More count: ${orderAmount}\n`;
     reportContent += "-----------------\n";
   }
