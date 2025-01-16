@@ -1,5 +1,6 @@
 #  Fundamental security concepts.(CIA)
 - Confidentiality
+>  ensures that data is not disclosed to unauthorized persons.
 - Integrity
 - Availability
 
