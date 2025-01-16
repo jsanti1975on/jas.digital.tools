@@ -13,7 +13,14 @@ A combination of software development and systems operations and refers to the p
 A combination of software development, security operations, and systems operations and refers to the practice of integrating each discipline with the others.
 ```
 
-# (CIRT) Computer incident response team / (CSIRT) computer security incident response team / (CERT) computer emergency response team
-```bash
-Team with responsibility for incident response. The CSIRT must have expertise across a number of business domains (IT, HR, legal, and marketing, for instance).
-```
+# Computer Incident Response Teams
+
+### Acronyms:
+- **<span style="color: red;">CIRT</span>**: Computer Incident Response Team  
+- **<span style="color: red;">CSIRT</span>**: Computer Security Incident Response Team  
+- **<span style="color: red;">CERT</span>**: Computer Emergency Response Team  
+
+### Description:
+Team with responsibility for incident response. The **<span style="color: red;">CSIRT</span>** must have expertise across a number of business domains, including IT, HR, legal, and marketing.
+
+> **Note:** This text highlights acronyms in red for emphasis.
