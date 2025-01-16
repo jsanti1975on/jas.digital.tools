@@ -2,7 +2,9 @@
 - Confidentiality
 >  ensures that data is not disclosed to unauthorized persons.
 - Integrity
+> ensures that data is not modified or tampered with.
 - Availability
+> ensures the data is available when needed.
 
 
 ## (CIA) 
