@@ -23,4 +23,4 @@ A combination of software development, security operations, and systems operatio
 ### Description:
 Team with responsibility for incident response. The **<span style="color: red;">CSIRT</span>** must have expertise across a number of business domains, including IT, HR, legal, and marketing.
 
-> **Note:** This text highlights acronyms in red for emphasis.
+
