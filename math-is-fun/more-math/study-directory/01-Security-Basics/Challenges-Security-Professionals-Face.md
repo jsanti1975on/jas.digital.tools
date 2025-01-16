@@ -19,5 +19,6 @@ The adoption of collaborative practices, such as **DevOps** and **DevSecOps**, i
 As network operations and cloud computing continue to evolve, security professionals must prioritize breaking down silos to improve efficiency and reduce risks. 
 
 *Source: TestOut Security Pro*
-![IaC](https://github.com/user-attachments/assets/9aee5b5d-0899-4d9f-a07a-30894e8977fb)
+![IaC](https://github.com/user-attachments/assets/ca8656bf-6980-4e92-977f-af03597329b4)
+
 
