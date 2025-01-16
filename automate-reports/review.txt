@@ -1,0 +1,66 @@
+**INVENTORY REPORT**
+*(Prepared on [Insert Date])*  
+
+This report provides a detailed summary of the inventory status across all sizes and colors. The data has been reviewed and calculated according to the guidelines, ensuring accuracy for both on-hand counts and additional order recommendations.  
+
+---
+
+#### Size: Small  
+-----------------
+Row 2: Color = LAKE BLUE, On-hand count = 1, Order-More count = 5  
+Row 3: Color = CONCRETE GREY, On-hand count = 3, Order-More count = 3  
+Row 4: Color = ROYAL BLUE, On-hand count = 5, Order-More count = 0  
+Row 5: Color = MAROON, On-hand count = 1, Order-More count = 5  
+Row 6: Color = BLACK, On-hand count = 3, Order-More count = 3  
+
+#### Size: Medium  
+-----------------
+Row 2: Color = LAKE BLUE, On-hand count = 2, Order-More count = 4  
+Row 3: Color = CONCRETE GREY, On-hand count = 0, Order-More count = 6  
+Row 4: Color = ROYAL BLUE, On-hand count = 2, Order-More count = 4  
+Row 5: Color = MAROON, On-hand count = 4, Order-More count = 0  
+Row 6: Color = BLACK, On-hand count = 2, Order-More count = 4  
+
+#### Size: Large  
+-----------------
+Row 2: Color = LAKE BLUE, On-hand count = 1, Order-More count = 5  
+Row 3: Color = CONCRETE GREY, On-hand count = 1, Order-More count = 5  
+Row 4: Color = ROYAL BLUE, On-hand count = 3, Order-More count = 3  
+Row 5: Color = MAROON, On-hand count = 0, Order-More count = 6  
+Row 6: Color = BLACK, On-hand count = 1, Order-More count = 5  
+
+#### Size: 1XL  
+-----------------
+Row 2: Color = LAKE BLUE, On-hand count = 2, Order-More count = 4  
+Row 3: Color = CONCRETE GREY, On-hand count = 0, Order-More count = 6  
+Row 4: Color = ROYAL BLUE, On-hand count = 1, Order-More count = 5  
+Row 5: Color = MAROON, On-hand count = 2, Order-More count = 4  
+Row 6: Color = BLACK, On-hand count = 2, Order-More count = 4  
+
+#### Size: 2X  
+-----------------
+Row 2: Color = LAKE BLUE, On-hand count = 1, Order-More count = 5  
+Row 3: Color = CONCRETE GREY, On-hand count = 1, Order-More count = 5  
+Row 4: Color = ROYAL BLUE, On-hand count = 4, Order-More count = 0  
+Row 5: Color = MAROON, On-hand count = 1, Order-More count = 5  
+Row 6: Color = BLACK, On-hand count = 4, Order-More count = 0  
+
+#### Size: 3X  
+-----------------
+Row 2: Color = LAKE BLUE, On-hand count = 2, Order-More count = 4  
+Row 3: Color = CONCRETE GREY, On-hand count = 3, Order-More count = 3  
+Row 4: Color = ROYAL BLUE, On-hand count = 1, Order-More count = 5  
+Row 5: Color = MAROON, On-hand count = 0, Order-More count = 6  
+Row 6: Color = BLACK, On-hand count = 2, Order-More count = 4  
+
+---
+
+**End of Report**
+-----------------------------------------------  
+
+### Acknowledgment  
+By signing below, I acknowledge that I have reviewed the inventory report and approve the recommended actions for order adjustments based on current stock levels.  
+
+**Signature**: _____________________________  
+**Name**: ________________________________  
+**Date**: _________________________________  
