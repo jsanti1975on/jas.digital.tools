@@ -30,6 +30,8 @@ In this lecture, Professor Zeldovich discusses side-channel attacks, specificall
 
 [Watch the video](https://youtu.be/1RipwqJG50c?list=PLllyXyS8kBLz0Oxtfhg8zQ_bJYH0U3TKo)
 
-=======================================================================================================
+==============================================(Needs Formatting)=========================================================
+[Use The Square Brackts](https://youtu.be/GPwNFrpd1KU)
+> Side-Channel Attacks on Everyday Applications
 
  
