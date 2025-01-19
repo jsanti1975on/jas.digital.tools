@@ -74,6 +74,36 @@ In this lecture, Professor Zeldovich discusses side-channel attacks, specificall
 [Watch the video](https://<Link to video>/)
 
 ============================================
+============Review Format Below============
+# CompTIA Security+ Study Notes: Side-Channel Attacks
+
+This section covers **side-channel attacks**, which exploit physical properties (like power consumption, electromagnetic emissions, or timing) of hardware to compromise the security of sensitive data. These attacks target the environment and hardware involved in cryptographic operations, not just the algorithms themselves.
+
+## Side-Channel Attack Overview
+
+Side-channel attacks focus on extracting sensitive information, such as encryption keys, by analyzing physical signals emitted during cryptographic operations. The following image shows a typical setup for such attacks.
+
+![Side-Channel Attack Setup](https://github.com/user-attachments/assets/99eb0a08-b984-4dac-a674-3a46e0568985)
+
+> **Note**: The diagram highlights how attackers exploit physical properties (power, EM emissions, or timing) to compromise cryptographic systems, emphasizing the need to secure both algorithms and hardware.
+
+## Learn More: YouTube Resources
+
+### 1. **Side-Channel Attacks**  
+   - MIT 6.858 Computer Systems Security, Fall 2014  
+   - Instructor: Nickolai Zeldovich  
+   [Watch the video](https://youtu.be/3v5Von-oNUg)  
+   *In-depth explanation of side-channel and timing attacks.*
+
+### 2. **Radio Hacking: Cars, Hardware, and more!** - Samy Kamkar - AppSec California 2016  
+   [Watch the video](https://youtu.be/1RipwqJG50c?list=PLllyXyS8kBLz0Oxtfhg8zQ_bJYH0U3TKo)
+
+### 3. **Side-Channel Attacks on Everyday Applications**  
+   [Watch the video](https://youtu.be/GPwNFrpd1KU)
+
+### 4. **Spectre and Meltdown**  
+   [Watch the video](https://youtu.be/mgAN4w7LH2o)  
+   *Learn about how Spectre and Meltdown exploit side-channel vulnerabilities in modern processors.*
 
 
 
