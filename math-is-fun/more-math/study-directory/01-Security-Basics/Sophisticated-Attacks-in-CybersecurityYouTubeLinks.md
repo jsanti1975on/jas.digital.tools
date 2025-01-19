@@ -18,8 +18,14 @@ The image below provides a typical setup for side-channel attacks. It demonstrat
 ### For a deeper dive into side-channel attacks, check out the following YouTube video:
 
 - Side-Channel Attacks
-> https://youtu.be/3v5Von-oNUg
+> 45,765 views  Mar 30, 2017  MIT 6.858 Computer Systems Security, Fall 2014
+> MIT 6.858 Computer Systems Security, Fall 2014
+> View the complete course: http://ocw.mit.edu/6-858F14
+> Instructor: Nickolai Zeldovich
 
+In this lecture, Professor Zeldovich discusses side-channel attacks, specifically timing attacks.
+
+> https://youtu.be/3v5Von-oNUg
 
 - Name of Video
 > Block Text
