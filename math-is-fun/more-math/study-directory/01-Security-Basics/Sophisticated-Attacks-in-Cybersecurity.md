@@ -1,3 +1,6 @@
+![2025-01-18 21_21_34-CTF Expert - LAN-KALI-HOME-LAB](https://github.com/user-attachments/assets/24a21526-af7e-4f36-aa32-5015993e34a9)
+
+
 # Sophisticated Attacks in Cybersecurity
 
 Below is a list of sophisticated attacks that are essential to understand for Security+ training. These attacks exploit indirect vulnerabilities, advanced techniques, and system weaknesses.
