@@ -18,4 +18,8 @@ The diagram above highlights the importance of securing not only cryptographic a
 ### For a deeper dive into side-channel attacks, check out the following YouTube video:
 
 - 16. Side-Channel Attacks
-https://youtu.be/3v5Von-oNUg
+> https://youtu.be/3v5Von-oNUg
+
+- [Name of YouTube VIDEO]
+> link
+
