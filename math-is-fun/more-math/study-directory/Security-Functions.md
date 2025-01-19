@@ -1,3 +1,4 @@
+![2025-01-18 21_21_34-CTF Expert - LAN-KALI-HOME-LAB](https://github.com/user-attachments/assets/df606dcb-79f8-4023-bbb9-f6727c03ea76)
 # Summary: Key Concepts in Security Functions
 
 Security is an ongoing process that includes assessing needs, setting up security systems, hardening and monitoring them, responding to attacks, and deterring threats. Understanding security fundamentals, compliance factors, and best practice frameworks is critical to contributing effectively to a security team. Below is a summarized overview of key security topics.
