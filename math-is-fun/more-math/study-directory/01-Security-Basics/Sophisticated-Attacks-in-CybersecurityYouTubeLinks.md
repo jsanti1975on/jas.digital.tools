@@ -10,7 +10,7 @@ The image below provides a typical setup for side-channel attacks. It demonstrat
 
 > **Note**: This practical workflow demonstrates how attackers can exploit physical properties (power, EM emissions, or timing) to compromise cryptographic systems. The diagram above highlights the importance of securing not only cryptographic algorithms but also the hardware and environment in which they operate.
 
-## Learn More: YouTube Resources
+## Learn More: YouTube Resource
 
 ### For a deeper dive into side-channel attacks, check out the following YouTube video:
 
@@ -24,14 +24,12 @@ In this lecture, Professor Zeldovich discusses side-channel attacks, specificall
 
 [Watch the video](https://youtu.be/3v5Von-oNUg)
 
-# Heading 
+## Learn More: YouTube Resource 
 
-- **Name of Video**
+- **Radio Hacking: Cars, Hardware, and more! - Samy Kamkar - AppSec California 2016**
 
-> Text
-> Text
-> Text
-> Text
-> Text
+[Watch the video](https://youtu.be/1RipwqJG50c?list=PLllyXyS8kBLz0Oxtfhg8zQ_bJYH0U3TKo)
+
+=======================================================================================================
 
  
