@@ -1,10 +1,10 @@
 Web Scraping and Your Studies for CompTIA Security+! 🚀
 
-This section provides a YouTube Scraper to fetch essential metadata (such as title, description, views, and publish date) from a YouTube video. This can be useful for citing sources when researching for your CompTIA Security+ exam or for other educational purposes.
-YouTube Scraper for Metadata Needed to Cite Sources
+>This section provides a YouTube Scraper to fetch essential metadata (such as title, description, views, and publish date) from a YouTube video. This can be useful for citing sources when researching >for your CompTIA Security+ exam or for other educational purposes.
+>YouTube Scraper for Metadata Needed to Cite Sources
 
-This Python script uses yt-dlp to extract metadata from a YouTube video, which is useful for citing video sources properly.
-Python Code:
+*This Python script uses yt-dlp to extract metadata from a YouTube video, which is useful for citing video sources properly.*
+```Python3
 
 import yt_dlp
 
@@ -27,16 +27,17 @@ print(f"Title: {title}")
 print(f"Description: {description}")
 print(f"Views: {views}")
 print(f"Publish Date: {publish_date}")
+```
 
-Explanation:
+# Explanation:
 
-    yt-dlp: This library is used for extracting metadata and downloading videos from YouTube (and other platforms). It is a fork of the popular youtube-dl tool and supports a wide variety of platforms.
-    video_url: Replace the provided URL with any YouTube video URL you want to extract metadata from.
-    Metadata Extracted:
-        Title: The title of the video.
-        Description: The description of the video.
-        Views: The number of views on the video.
-        Publish Date: The publish date of the video (in YYYYMMDD format).
+>yt-dlp: This library is used for extracting metadata and downloading videos from YouTube (and other platforms). It is a fork of the popular youtube-dl tool and supports a wide variety of platforms.
+>video_url: Replace the provided URL with any YouTube video URL you want to extract metadata from.
+>Metadata Extracted:
+        -Title: The title of the video.
+        -Description: The description of the video.
+        -Views: The number of views on the video.
+        -Publish Date: The publish date of the video (in YYYYMMDD format).
 
 How to Use:
 
@@ -48,17 +49,18 @@ How to Use:
 
     Run the script, and it will output the video's metadata.
 
-Example Output:
+**Example Output:**
+>Title: Side-Channel Attacks on Everyday Applications
+>Description: by Taylor Hornby
+>Views: 28806
+>Publish Date: 20161122
 
-Title: Side-Channel Attacks on Everyday Applications
-Description: by Taylor Hornby
-Views: 28806
-Publish Date: 20161122
+**Dependencies:**
 
-Dependencies:
+    `yt-dlp: Install it using pip install yt-dlp.`
 
-    yt-dlp: Install it using pip install yt-dlp.
+**Final Notes:**
 
-Final Notes:
-
-This tool helps automate the process of gathering YouTube video metadata, which can be useful for citing sources in your CompTIA Security+ research or for any academic projects. Be sure to replace the YouTube URL with the one you're interested in.
+>This tool helps automate the process of gathering YouTube video metadata, which can be useful for citing sources in your CompTIA Security+ research or for any academic projects. Be sure to replace
+>>the YouTube URL with the one you're interested in.
+====================================================== 
