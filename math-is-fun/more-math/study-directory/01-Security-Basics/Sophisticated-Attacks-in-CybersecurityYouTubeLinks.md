@@ -106,7 +106,8 @@ Side-channel attacks focus on extracting sensitive information, such as encrypti
    *Learn about how Spectre and Meltdown exploit side-channel vulnerabilities in modern processors.*
 
 
-
+====================================Project)=========================================\
+https://youtu.be/BHqrA8lzz2o?list=PLllyXyS8kBLz0Oxtfhg8zQ_bJYH0U3TKo
 
 
 
