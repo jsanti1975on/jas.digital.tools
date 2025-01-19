@@ -30,10 +30,60 @@ In this lecture, Professor Zeldovich discusses side-channel attacks, specificall
 
 [Watch the video](https://youtu.be/1RipwqJG50c?list=PLllyXyS8kBLz0Oxtfhg8zQ_bJYH0U3TKo)
 
-==============================================Needs Formatting====
-[Watch the video](https://youtu.be/GPwNFrpd1KU)
-> Side-Channel Attacks on Everyday Applications
+## Learn More: YouTube Resource 
+
+- **Side-Channel Attacks on Everyday Applications**
 > 28,806 views  Nov 22, 2016
->by Taylor Hornby
->In 2013, Yuval Yarom and Katrina Falkner discovered the FLUSH+RELOAD L3 cache side-channel. 
+
+[Watch the video](https://youtu.be/GPwNFrpd1KU)
+
+
+## Learn More: YouTube Resource
+
+- **Next Name of Video**
+> view count and date
+
+[Watch the video](https://<Link to video>/)
+
+## Learn More: YouTube Resource
+
+- **Next Name of Video**
+> view count and date
+
+[Watch the video](https://<Link to video>/)
+
+## Learn More: YouTube Resource
+
+- **Next Name of Video**
+> view count and date
+
+[Watch the video](https://<Link to video>/)
+
+## Learn More: YouTube Resource
+
+- **Next Name of Video**
+> view count and date
+
+[Watch the video](https://<Link to video>/)
+
+## Learn More: YouTube Resource
+
+- **Next Name of Video**
+> view count and date
+
+[Watch the video](https://<Link to video>/)
+
+============================================
+
+
+
+
+
+
+
+
+
+
+
+
  
