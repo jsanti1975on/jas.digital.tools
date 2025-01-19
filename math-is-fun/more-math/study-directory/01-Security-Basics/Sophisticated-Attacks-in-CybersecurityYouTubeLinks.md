@@ -9,8 +9,8 @@ The image below provides a typical setup for side-channel attacks. It demonstrat
 ![Side-Channel Attack Setup](https://github.com/user-attachments/assets/99eb0a08-b984-4dac-a674-3a46e0568985)
 
 ```bash
-This practical workflow demonstrates how attackers can exploit physical properties (power, EM emissions, or timing) to compromise cryptographic systems.
-The diagram above highlights the importance of securing not only cryptographic algorithms but also the hardware and environment in which they operate.
+> This practical workflow demonstrates how attackers can exploit physical properties (power, EM emissions, or timing) to compromise cryptographic systems.
+> The diagram above highlights the importance of securing not only cryptographic algorithms but also the hardware and environment in which they operate.
 ```
 
 ## Learn More: YouTube Resources
@@ -22,6 +22,4 @@ The diagram above highlights the importance of securing not only cryptographic a
 
 - [Name of YouTube VIDEO]
 > link
-
-Alt-H1
-============================================
+==========================================================================================================================================================
