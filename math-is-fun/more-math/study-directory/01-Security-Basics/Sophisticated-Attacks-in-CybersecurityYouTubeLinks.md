@@ -22,5 +22,5 @@ The image below provides a typical setup for side-channel attacks. It demonstrat
 
 - [Name of YouTube VIDEO]
 
-#
-==========================================================================================================================================================
+####
+
