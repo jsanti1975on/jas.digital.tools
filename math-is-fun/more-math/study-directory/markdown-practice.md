@@ -1,5 +1,5 @@
 ## I. Introduction to Information Security
-- **Overview** of the TestOut Security Pro course
+- **Overview** of the redacted course
 - **Purpose**: Preparing to become a security professional
 
 ## II. The Evolving Threat Landscape
