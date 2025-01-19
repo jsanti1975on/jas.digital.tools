@@ -17,10 +17,17 @@ The image below provides a typical setup for side-channel attacks. It demonstrat
 
 ### For a deeper dive into side-channel attacks, check out the following YouTube video:
 
-- 16. Side-Channel Attacks
+- Side-Channel Attacks
 > https://youtu.be/3v5Von-oNUg
 
-- [Name of YouTube VIDEO]
 
-####
+- Name of Video
+> Block Text
+
+
+
+
+
+
+
 
