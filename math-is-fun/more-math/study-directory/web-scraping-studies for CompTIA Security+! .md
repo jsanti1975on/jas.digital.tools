@@ -61,6 +61,4 @@ How to Use:
 
 **Final Notes:**
 
->This tool helps automate the process of gathering YouTube video metadata, which can be useful for citing sources in your CompTIA Security+ research or for any academic projects. Be sure to replace
->>the YouTube URL with the one you're interested in.
-====================================================== 
+>This tool helps automate the process of gathering YouTube video metadata, which can be useful for citing sources in your CompTIA Security+ research or for any academic projects.
