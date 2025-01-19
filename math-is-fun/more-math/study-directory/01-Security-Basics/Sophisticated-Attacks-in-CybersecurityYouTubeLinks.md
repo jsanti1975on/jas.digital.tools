@@ -8,7 +8,7 @@ The image below provides a typical setup for side-channel attacks. It demonstrat
 
 ![Side-Channel Attack Setup](https://github.com/user-attachments/assets/99eb0a08-b984-4dac-a674-3a46e0568985)
 
-> **Note**: This practical workflow demonstrates how attackers can exploit physical properties (power, EM emissions, or timing) to compromise cryptographic systems. The diagram above highlights the importance of securing not only cryptographic algorithms but also the hardware and environment in which they operate.
+> **Note**: This practical workflow demonstrates how attackers can exploit physical properties (such as power, EM emissions, or timing) to compromise cryptographic systems. The diagram above highlights the importance of securing not only cryptographic algorithms but also the hardware and environment in which they operate.
 
 ## Learn More: YouTube Resources
 
@@ -24,5 +24,6 @@ In this lecture, Professor Zeldovich discusses side-channel attacks, specificall
 
 [Watch the video](https://youtu.be/3v5Von-oNUg)
 
-- **Name of Video**  
-  > Block Text (You can replace this with more details or information about a second video if needed)
+- **[Another Video Title]**  
+  > [Watch the video](https://youtu.be/1RipwqJG50c?list=PLllyXyS8kBLz0Oxtfhg8zQ_bJYH0U3TKo)
+
