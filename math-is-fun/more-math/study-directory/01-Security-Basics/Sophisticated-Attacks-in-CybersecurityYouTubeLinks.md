@@ -18,7 +18,6 @@ The image below provides a typical setup for side-channel attacks. It demonstrat
   > 45,765 views • Mar 30, 2017  
   > MIT 6.858 Computer Systems Security, Fall 2014  
   > Instructor: Nickolai Zeldovich  
-  > [View the complete course](http://ocw.mit.edu/6-858F14)
 
 In this lecture, Professor Zeldovich discusses side-channel attacks, specifically **timing attacks**.
 
@@ -27,6 +26,7 @@ In this lecture, Professor Zeldovich discusses side-channel attacks, specificall
 ## Learn More: YouTube Resource 
 
 - **Radio Hacking: Cars, Hardware, and more! - Samy Kamkar - AppSec California 2016**
+> 1,699,881 views  Mar 21, 2016
 
 [Watch the video](https://youtu.be/1RipwqJG50c?list=PLllyXyS8kBLz0Oxtfhg8zQ_bJYH0U3TKo)
 
