@@ -5,9 +5,9 @@
 
 ## II. The Evolving Threat Landscape
 
-    **A. The “Arms Race” in Information Security**
+**A. The “Arms Race” in Information Security**
         - Increasing sophistication of cybercriminals and attacks
-    **B. Types of Cybercriminals**
+**B. Types of Cybercriminals**
         - Script kiddies
         - Nation-states
         - Organized crime
@@ -15,35 +15,35 @@
 
 ## III. The Role of Security Professionals
 
-    **A. Defending Against Threats**
+**A. Defending Against Threats**
         - Identifying threats from an attacker’s perspective
         - Staying one step ahead of cybercriminals
-    **B. Challenges**
+**B. Challenges**
         - Growth of internet-connected devices
         -I ncreased speed of technology development
         - New attack vectors with each new device
 
 ## IV. Realistic Goals for Security Professionals
 
-    **A. Minimizing Attacks**
+**A. Minimizing Attacks**
         - Impossible to eliminate all breaches
-    **B. Reducing Damage**
+**B. Reducing Damage**
         - Recognizing breaches quickly
         - Responding rapidly to minimize impact
 
 ## V. Proactive Approach to Security
 
-    **A. Key Actions**
+**A. Key Actions**
         - Keep systems updated
         - Implement proper policies and procedures
         - Harden systems and networks
-    **B. Staying Informed**
+**B. Staying Informed**
         - Follow blogs, forums, news outlets, podcasts
         - Keep up to date with the latest vulnerabilities and security trends
 
 ## VI. Conclusion
 
-    **A. Importance of Proactive Security**
+**A. Importance of Proactive Security**
         - Anticipating threats
         - Recognizing attacks quickly
         - Responding to minimize damage
