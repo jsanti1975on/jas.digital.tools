@@ -108,6 +108,9 @@ Side-channel attacks focus on extracting sensitive information, such as encrypti
 
 ====================================Project)=========================================\
 https://youtu.be/BHqrA8lzz2o?list=PLllyXyS8kBLz0Oxtfhg8zQ_bJYH0U3TKo
+-----------------------------------------------------------------------------------(more study)-------
+
+https://youtu.be/GPwNFrpd1KU?list=PLllyXyS8kBLz0Oxtfhg8zQ_bJYH0U3TKo
 
 
 
