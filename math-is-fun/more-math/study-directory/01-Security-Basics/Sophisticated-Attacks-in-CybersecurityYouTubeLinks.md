@@ -111,6 +111,19 @@ https://youtu.be/BHqrA8lzz2o?list=PLllyXyS8kBLz0Oxtfhg8zQ_bJYH0U3TKo
 -----------------------------------------------------------------------------------(more study)-------
 
 https://youtu.be/GPwNFrpd1KU?list=PLllyXyS8kBLz0Oxtfhg8zQ_bJYH0U3TKo
+----------------------------------------------------------------------------(test)-------
+```Title: Side-Channel Attacks on Everyday Applications
+Description: by Taylor Hornby
+
+In 2013, Yuval Yarom and Katrina Falkner discovered the FLUSH+RELOAD L3 cache side-channel. So far it has broken numerous implementations of cryptography including, notably, the AES and ECDSA in OpenSSL and the RSA GnuPG. Given FLUSH+RELOAD's astounding success at breaking cryptography, we're lead to wonder if it can be applied more broadly, to leak useful information out of regular applications like text editors and web browsers whose main functions are not cryptography.
+
+In this talk, I'll briefly describe how the FLUSH+RELOAD attack works, and how it can be used to build input distinguishing attacks. In particular, I'll demonstrate how when the user Alice browses around the top 100 Wikipedia pages, the user Bob can spy on which of those pages she's visiting.
+
+This isn't an earth-shattering attack, but as the code I'm releasing shows, it can be implemented reliably. My goal is to convince the community that side channels, FLUSH+RELOAD in particular, are useful for more than just breaking cryptography. The code I'm releasing is a starting point for developing better attacks. If you have access to a vulnerable CPU running a suitable OS, you should be able to reproduce the attack within minutes after watching the talk and downloading the code.
+Views: 28807
+Publish Date: 20161122
+```
+
 
 
 
