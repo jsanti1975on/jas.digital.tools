@@ -1,6 +1,8 @@
 # Acronyms 
 
-## resource provided by => https://hackersarise.thinkific.com/courses/take/security-training/
+## resource provided by => "hackersarise.thinkific.com/courses/take/security-training/"
+
+- Below is link for acronyms and terms
 
 [](https://www.comptia.org/content/guide/information-technology-terminology#section3)
 
