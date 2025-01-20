@@ -1,4 +1,5 @@
 ===========( ! Ethical Web Scraper for CompTIA Sec+ Certification study semester Spring 2025 Valencia State College. )===========
+==[ Gets the data needs some more fuctions to format to user liking ]==
 ```python
 import requests
 from bs4 import BeautifulSoup
@@ -14,19 +15,21 @@ def scrape_article(url):
         print(f"Error fetching the URL: {e}")
         return None
 
+    # Parse the HTML
     soup = BeautifulSoup(response.text, 'html.parser')
 
-    # Update this selector based on the website's structure
-    title = soup.find('h1').get_text(strip=True) if soup.find('h1') else "Unknown Title"
-    
-    # Experiment with broader selectors if <article> is missing
-    article_body = soup.find(class_='content') or soup.find('main') or soup.find('body')
-    if not article_body:
-        print("Article content not found. Please inspect the website's structure.")
-        return None
+    # Extract the title
+    title_section = soup.find('section', class_='titleSection')
+    title = title_section.find('h1').get_text(strip=True) if title_section else "Unknown Title"
 
-    paragraphs = article_body.find_all('p')
-    content = "\n".join(p.get_text(strip=True) for p in paragraphs if p.get_text(strip=True))
+    # Extract the main content
+    content_div = soup.find('div', class_='col-md-9 main-content')
+    if content_div:
+        # Extract paragraphs
+        paragraphs = content_div.find_all(['p', 'li'])
+        content = "\n".join(p.get_text(strip=True) for p in paragraphs if p.get_text(strip=True))
+    else:
+        content = "Content not found."
 
     return {
         "Title": title,
@@ -34,14 +37,15 @@ def scrape_article(url):
         "URL": url
     }
 
-# Run the scraper
+# Scrape the article
 article_data = scrape_article(article_url)
 
+# Display the results
 if article_data:
-    print(f"Title: {article_data['Title']}")
-    print("\nArticle Content:\n")
-    print(article_data['Content'])
+    print(f"Title: {article_data['Title']}\n")
+    print(f"Content:\n{article_data['Content']}\n")
 else:
     print("Failed to scrape the article.")
+
 ```
 
