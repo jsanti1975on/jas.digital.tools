@@ -4,8 +4,8 @@
 import requests
 from bs4 import BeautifulSoup
 
-# URL of the target article
-article_url = "https://library.mosse-institute.com/articles/2022/05/the-attacker-mindset-the-dad-triad/the-attacker-mindset-the-dad-triad.html"
+# URL of the target article => used https://www.comptia.org/content/guide/information-technology-terminology#section3
+article_url = ''
 
 def scrape_article(url):
     try:
