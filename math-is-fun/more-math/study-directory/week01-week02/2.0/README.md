@@ -1,3 +1,5 @@
+
+```bash
 2.0 Threats, Vulnerabilities, and Mitigations
 ├── 2.1 Understanding Attacks
 │   ├── 2.1.1 Threat Actor Types
@@ -26,3 +28,4 @@
 │   ├── 2.3.5 Use Windows Security
 │   ├── 2.3.6 Configure Microsoft Defender
 │   ├── 2.3.7 Analyze Indicators of Malware-Based Attacks
+```
