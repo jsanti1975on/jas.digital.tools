@@ -1,5 +1,7 @@
 ![CEUs](https://github.com/user-attachments/assets/325b77c2-4778-4e4e-a5ca-f48b9f64d561)
 ==============( Need Format )=============
+![capt-clip-new-tools-hackers-arise](https://github.com/user-attachments/assets/f3b5a545-9625-403d-a9e1-f4d63a470038)
+
 ```bash
 Continuing Education for CompTIA Certifications
 
