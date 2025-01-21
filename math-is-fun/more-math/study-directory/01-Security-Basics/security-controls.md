@@ -1,3 +1,4 @@
+![lag-bolt-fender-washer-bg-removed](https://github.com/user-attachments/assets/45f0a948-7cdb-4899-8499-7769c5bcc675)
 # Exam Objectives 1.1
 
 ## Categories of security controls:
