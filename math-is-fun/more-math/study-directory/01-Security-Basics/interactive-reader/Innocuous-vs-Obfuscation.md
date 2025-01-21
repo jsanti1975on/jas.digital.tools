@@ -32,3 +32,6 @@ The script visualizes:
 
 * A clear sine wave representing innocuous (normal) data.
 * The same sine wave with added noise to simulate obfuscation.
+
+**Link to YouTube demo**
+[Watch](https://youtu.be/ddzg4K5_Ogw)
