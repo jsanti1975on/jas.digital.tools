@@ -6,7 +6,7 @@ The ultimate goal is to build a tool that helps local governments and community 
 
 ### 🎥 Quick Demo
 
-Check out this short recording of the animated bar chart in action:
+Check out this short recording of the animated bar chart in action with an arbitrary data set
 
 https://github.com/user-attachments/assets/ccd6dfde-c481-4110-a7af-fb66bf15ed3e
 
