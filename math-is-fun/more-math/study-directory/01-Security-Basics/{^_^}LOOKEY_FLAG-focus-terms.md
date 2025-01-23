@@ -3,7 +3,7 @@
 **1.1 - Security Introduction**
 
     * Assignment 1.1.1 - The Security Landscape 
-        * Edit
+        * [CIA Triad](./01-Security-Basics/CIA-Triad.md)
     * Assignment 1.1.2 - Security Concepts 
         * Edit
     * Assignment 1.1.3 - Security Introduction Facts 
