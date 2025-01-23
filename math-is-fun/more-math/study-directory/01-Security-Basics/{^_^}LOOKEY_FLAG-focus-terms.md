@@ -5,7 +5,7 @@
     * Assignment 1.1.1 - The Security Landscape 
         You can find more information about the CIA Triad in the following GitHub file:
 
-[CIA Triad](./01-Security-Basics/CIA-Triad.md) 
+[CIA Triad](./CIA-Triad.md) 
         
 
         
