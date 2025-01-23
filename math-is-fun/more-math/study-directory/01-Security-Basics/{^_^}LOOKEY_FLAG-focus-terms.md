@@ -20,7 +20,22 @@
 **1.2 - Security Controls**
 
     * Assignment 1.2.1 - Control Categories and Types 
-        * Edit
+        * 
+Security involves a continuous balancing act between convenience and protection, so you'll always be exploring ways to reduce risks and threats while ensuring an acceptable level of usability.
+
+By grasping the fundamental concepts of information security, you'll be better equipped to assess the risks to your systems and identify effective strategies for protecting them.
+
+
+
+
+
+
+
+
+
+
+
+        
     * Assignment 1.2.2 - Control Categories and Types Facts 
         * Edit
     * Assignment 1.2.3 - Security Control and Framework Types 
