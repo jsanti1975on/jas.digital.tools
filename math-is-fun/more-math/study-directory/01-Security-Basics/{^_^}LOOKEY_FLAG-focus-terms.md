@@ -1,3 +1,42 @@
+# Below will be the framework, insert text and or link, image, video of a concept.
+
+**1.1 - Security Introduction**
+
+    * Assignment 1.1.1 - The Security Landscape 
+        * Edit
+    * Assignment 1.1.2 - Security Concepts 
+        * Edit
+    * Assignment 1.1.3 - Security Introduction Facts 
+        * Edit
+    * Assignment 1.1.4 - Security Job Roles 
+        * Edit
+    * Assignment 1.1.5 - Practice Questions 
+        * Edit
+
+    * External Tool - Practice Questions
+
+**1.2 - Security Controls**
+
+    * Assignment 1.2.1 - Control Categories and Types 
+        * Edit
+    * Assignment 1.2.2 - Control Categories and Types Facts 
+        * Edit
+    * Assignment 1.2.3 - Security Control and Framework Types 
+        * Edit
+    * Assignment 1.2.4 - Practice Questions 
+        * Edit
+
+    * External Tool - Practice Questions
+
+**1.3 - Use the Simulator**
+
+    * Assignment 1.3.1 - Use the Simulator 
+        * Edit
+    * Assignment 1.3.2 - Labsim Features
+        * Edit
+
+*===============( Gather text from below and parse )============*
+
 # Security operations center (SOC)
 ```bash
 The location where security professionals monitor and protect critical information assets in an organization.
