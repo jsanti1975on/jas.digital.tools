@@ -2,7 +2,7 @@
 
 **1.1 - Security Introduction**
 
-   *1.1.1 - The Security Landscape*
+- The Security Landscape
     
 As a security professional, your role is to stay ahead of potential attackers. Achieve this by adopting a proactive security mindset. Stay updated on the latest threats, familiarize yourself with 
 
