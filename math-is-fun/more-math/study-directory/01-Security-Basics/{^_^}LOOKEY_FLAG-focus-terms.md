@@ -10,8 +10,12 @@ your systems and network, and recognize that there are limits to how much you ca
 
 to prevent significant damage.
 
-    * Assignment 1.1.2 - Security Concepts 
-        * Edit
+ - Security Concepts
+
+Security involves a continuous balancing act between convenience and protection, so you'll always be exploring ways to reduce risks and threats while ensuring an acceptable level of usability.
+
+By grasping the fundamental concepts of information security, you'll be better equipped to assess the risks to your systems and identify effective strategies for protecting them.
+
     * Assignment 1.1.3 - Security Introduction Facts 
         * Edit
     * Assignment 1.1.4 - Security Job Roles 
