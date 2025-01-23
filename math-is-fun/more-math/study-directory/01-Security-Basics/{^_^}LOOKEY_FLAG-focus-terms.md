@@ -1,7 +1,6 @@
 # Below will be the framework, insert text and or link, image, video of a concept.
 
 **1.1 - Security Introduction**
-
     * Assignment 1.1.1 - The Security Landscape 
         ```
         As a security professional, your role is to stay ahead of potential attackers. Achieve this by adopting a proactive security mindset. Stay updated on the latest threats, familiarize yourself with your systems and network, and recognize that there are limits to how much you can secure a network. Beyond those boundaries, it's essential to recognize the signs of an attack and intervene swiftly to prevent significant damage.
