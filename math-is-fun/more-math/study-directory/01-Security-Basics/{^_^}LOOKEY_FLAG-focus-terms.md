@@ -33,17 +33,13 @@ Security involves a continuous balancing act between convenience and protection,
 
 By grasping the fundamental concepts of information security, you'll be better equipped to assess the risks to your systems and identify effective strategies for protecting them.
 
+```
+sort => "AAA" refers to "Authentication, Authorization, and Accounting," which is a fundamental security framework that controls access to network resources by verifying user identity, defining what
 
+they can access, and logging their activity on the system; it's a key concept covered in the Security+ exam, signifying the importance of managing user access effectively. 
 
-
-
-
-
-
-
-
-
-        
+ ```
+       
     * Assignment 1.2.2 - Control Categories and Types Facts 
         * Edit
     * Assignment 1.2.3 - Security Control and Framework Types 
