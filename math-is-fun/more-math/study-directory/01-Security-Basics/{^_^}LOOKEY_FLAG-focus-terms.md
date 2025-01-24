@@ -88,6 +88,35 @@ Team with responsibility for incident response. The **<span style="color: red;">
 ![SECURITY-CONTROL](https://github.com/user-attachments/assets/c48e3c80-d286-4cc1-981e-429c66870092)
 
 
+=======( cited source => Professor Messer’s Course Notes <==> csrc.nist.gov ====
+
+
+**AAA (Authentication, Authorization, and Accounting)**
+
+* **Definition:** AAA refers to a fundamental security framework that controls access to network resources. 
+
+* **Components:**
+    * **Authentication:** Verifies the identity of a user or device attempting to access a system. 
+    * **Authorization:** 
+        * Defines the level of access granted to a user or device after successful authentication. 
+        * Determines what resources (files, applications, network segments) the user can access and what actions they are permitted to perform. 
+        * **Common Authorization Models:**
+            * **Role-Based Access Control (RBAC):** Assigns permissions based on a user's role within the organization (e.g., administrator, manager, employee).
+            * **Attribute-Based Access Control (ABAC):** Grants or denies access based on attributes of the user, the resource, and the environment (e.g., time of day, location).
+            * **Discretionary Access Control (DAC):** Allows the owner of a resource to control who can access it.
+            * **Mandatory Access Control (MAC):** Restricts access based on security labels and clearances. 
+    * **Accounting:** Tracks user activity on the system. This includes recording login/logout times, resources accessed, and actions performed. Accounting data is crucial for auditing, troubleshooting, and identifying potential security threats.
+
+* **Importance in Security+:** 
+    * AAA is a core concept within the CompTIA Security+ exam, emphasizing its critical role in securing network resources. 
+    * Understanding how to implement and manage effective AAA mechanisms is essential for any security professional.
+
+* **Key Takeaways:**
+    * AAA provides a multi-layered approach to access control, enhancing the overall security posture of a system or network.
+    * Implementing strong AAA measures is crucial for preventing unauthorized access, detecting malicious activity, and complying with security regulations.
+
+
+
 
 
 
