@@ -69,7 +69,7 @@ This version incorporates the following enhancements:
 
 This refined Markdown format should be even more helpful for your studies
 
-**=======================( Format Edit Below )================**
+|==========( Format Edit Below )==========>
 
 # Shebang Line (#!) in Bash Scripts:
 
@@ -77,14 +77,14 @@ Bash scripts often start with a special line called the *shebang* line (usually 
 
 This line tells the system which interpreter to use to execute the script. For Bash scripts, the shebang line typically looks like:
 
-`#!/bin/bash`
+> `#!/bin/bash`
 
 
 This line instructs the system to use the /bin/bash interpreter to run the script.
 
 
 ## Running a Bash Script:
-Here's how you would typically call a Bash script (assuming it has the shebang line) in the terminal:
+*Here's how you would typically call a Bash script (assuming it has the shebang line) in the terminal:*
     - Make the script executable: 
 	- Use the chmod command to grant the script execute permissions. For example:
 
