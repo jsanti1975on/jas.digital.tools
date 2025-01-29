@@ -18,7 +18,7 @@ function main(workbook: ExcelScript.Workbook) {
 
     // Initialize the report header
     let reportContent = "T-SHIRT PRINTING CHECKLIST\n\n";
-    reportContent += "This report serves as a printing checklist for M&H Awards.\n";
+    reportContent += "This report serves as a printing checklist for REDACTED SHIRTS.\n";
     reportContent += "----------------------------------------------\n\n";
 
     let hasOrders = false; // Track if there are any orders
