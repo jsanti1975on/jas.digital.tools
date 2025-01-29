@@ -18,8 +18,10 @@ function main(workbook: ExcelScript.Workbook) {
 
     // Initialize the report header
     let reportContent = "T-SHIRT PRINTING CHECKLIST\n\n";
-    reportContent += "This report serves as a printing checklist for Redacted.\n";
+    reportContent += "This report serves as a printing checklist for M&H Awards.\n";
     reportContent += "----------------------------------------------\n\n";
+
+    let hasOrders = false; // Track if there are any orders
 
     // Loop through each size and generate the order list
     for (const [size, column] of Object.entries(sizeColumns)) {
@@ -27,9 +29,8 @@ function main(workbook: ExcelScript.Workbook) {
         const countRange = sheet.getRange(`${column}2:${column}6`); // Start from row 2
         const counts = countRange.getValues();
 
-        // Add size header to the report
-        reportContent += `Size: ${size}\n`;
-        reportContent += "-----------------\n";
+        let sizeContent = `Size: ${size}\n-----------------\n`;
+        let hasSizeOrders = false;
 
         // Loop through rows to add order quantities (but hide on-hand counts)
         counts.forEach((row, index) => {
@@ -42,12 +43,20 @@ function main(workbook: ExcelScript.Workbook) {
             }
 
             if (orderAmount > 0) {
-                // Add an underscore for M&H Awards to check off each item
-                reportContent += `Row ${index + 2}: Color = ${color}, Order Amount = _______________\n`;
+                hasOrders = true;
+                hasSizeOrders = true;
+                // Add the order with a check-off box
+                sizeContent += `Row ${index + 2}: Color = ${color}, Order Amount = ${orderAmount}, Check Off _____\n`;
             }
         });
 
-        reportContent += "\n"; // Add a blank line after each size
+        if (hasSizeOrders) {
+            reportContent += sizeContent + "\n"; // Only add sizes that have orders
+        }
+    }
+
+    if (!hasOrders) {
+        reportContent += "No orders are required at this time.\n\n";
     }
 
     // Add the footer with signature line and date
@@ -63,8 +72,8 @@ function main(workbook: ExcelScript.Workbook) {
     //workbook.getApplication().showNotification("Supplier report for M&H Awards generated.");
 
     // Save report to a new worksheet
-    // const reportSheet = workbook.addWorksheet(`Supplier Report ${currentDate}`);
-    // const reportLines = reportContent.split("\n").map(line => [line]); // Convert text to rows
-    // reportSheet.getRange(`A1:A${reportLines.length}`).setValues(reportLines);
-    // reportSheet.getRange("A:A").getFormat().autofitColumns();
+    //const reportSheet = workbook.addWorksheet(`Supplier Report ${currentDate}`);
+    //const reportLines = reportContent.split("\n").map(line => [line]); // Convert text to rows
+    //reportSheet.getRange(`A1:A${reportLines.length}`).setValues(reportLines);
+    //reportSheet.getRange("A:A").getFormat().autofitColumns();
 }
