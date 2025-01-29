@@ -1,6 +1,9 @@
 # Below is an example of the output for the supplier-checklists.ts
 
 
+## The Rows can be removed in this line
+> sizeContent += `Row ${index + 2}: Color = ${color}, Order Amount = ${orderAmount},
+
 ```bash
 T-SHIRT PRINTING CHECKLIST
 
