@@ -63,8 +63,8 @@ function main(workbook: ExcelScript.Workbook) {
     //workbook.getApplication().showNotification("Supplier report for M&H Awards generated.");
 
     // Save report to a new worksheet
-    const reportSheet = workbook.addWorksheet(`Supplier Report ${currentDate}`);
-    const reportLines = reportContent.split("\n").map(line => [line]); // Convert text to rows
-    reportSheet.getRange(`A1:A${reportLines.length}`).setValues(reportLines);
-    reportSheet.getRange("A:A").getFormat().autofitColumns();
+    // const reportSheet = workbook.addWorksheet(`Supplier Report ${currentDate}`);
+    // const reportLines = reportContent.split("\n").map(line => [line]); // Convert text to rows
+    // reportSheet.getRange(`A1:A${reportLines.length}`).setValues(reportLines);
+    // reportSheet.getRange("A:A").getFormat().autofitColumns();
 }
