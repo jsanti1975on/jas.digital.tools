@@ -1,4 +1,4 @@
-_________________________________________________________
+===========================(80)================================================|
 # The course has updated to the CompTIA Security+ SY0-701
 - Author OTW
 - Bootcamp = Security+ SY0-701 Bootcamp
