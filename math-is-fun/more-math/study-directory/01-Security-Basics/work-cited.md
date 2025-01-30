@@ -1,3 +1,35 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+===============================================================
 # Below is information gathered from a bootcamp taught by. OTW
 
 ## WHO IS MASTER OTW
