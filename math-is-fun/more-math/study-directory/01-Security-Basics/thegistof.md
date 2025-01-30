@@ -4,7 +4,7 @@ Below is a link to the foundational terms discussed in the first week and chapte
 
 - **Security Controls**: [Link to Security Controls](more-math/study-directory/01-Security-Basics/security-controls.md)
 
-- <span style="color:red">Security Controls</span>: [Link to Security Controls](more-math/study-directory/01-Security-Basics/security-controls.md)
+<span style="color:red">Security Controls</span>: [Link to Security Controls](more-math/study-directory/01-Security-Basics/security-controls.md)
 
 
 ## Example: Configuring a Security Control
