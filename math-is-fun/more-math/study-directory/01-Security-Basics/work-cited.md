@@ -18,7 +18,7 @@ Rice, Jake, et al. “Security+ SY0-701 Bootcamp.” Hacker Arise, Occupy The We
 ==========================(100)===================================================================|
 # Stop Point: End of Current Section
 
-I will continue the current section and am now preparing to begin a **Capture the Flag (CTF)** challenge.
+I will continue the current section and now preparing to begin a **Capture the Flag (CTF)** challenge.
 
 
 ==========================(100)===================================================================|
