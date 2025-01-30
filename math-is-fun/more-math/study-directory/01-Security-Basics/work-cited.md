@@ -4,6 +4,9 @@
 - Bootcamp = Security+ SY0-701 Bootcamp
 - Link to bootcamp and Author information below
 
+# MLA Citation by owl.purdue.edu => fllow up on the possible editor ect. 
+Rice, Jake, et al. “Security+ SY0-701 Bootcamp.” Hacker Arise, Occupy The Web , hackers-arise.net/. Accessed 29 Jan. 2025. 
+
 [Bootcamp](https://hackersarise.thinkific.com/)
 
 
