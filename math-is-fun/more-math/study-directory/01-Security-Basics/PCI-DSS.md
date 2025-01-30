@@ -8,6 +8,8 @@ Hackers. ​​​​​​​​​​​​​​​​​​​​​​​Ma
 
 [Works Cited](https://www.hackers-arise.com/otw-in-the-news)
 
+### The information below is taken from a slide.
+
 ```bash
 PCI DSS compliance is the process of following the Payment Card Industry Data Security Standard (PCI DSS). PCI DSS is a set of guidelines that protect cardholder data. 
 Who needs to comply? 
