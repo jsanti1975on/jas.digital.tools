@@ -1,3 +1,12 @@
+# Below is information gathered from a bootcamp taught by. OTW
+
+## WHO IS MASTER OTW
+
+Master OTW is one of the world's most famous hackers.​ He is the author of Linux Basics for Hackers, Getting Started Becoming a Master Hacker, Network Basics for Hackers, Metasploit Basics for Hackers and the upcoming Python Basics for 
+
+Hackers. ​​​​​​​​​​​​​​​​​​​​​​​Master OTW is one of the leaders of the cyberwar to liberate Ukraine. To hear more about this, listen to this interview with David Bombal.
+
+[Works Cited](https://www.hackers-arise.com/otw-in-the-news)
 
 ```bash
 PCI DSS compliance is the process of following the Payment Card Industry Data Security Standard (PCI DSS). PCI DSS is a set of guidelines that protect cardholder data. 
