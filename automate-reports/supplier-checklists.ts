@@ -18,7 +18,7 @@ function main(workbook: ExcelScript.Workbook) {
 
     // Initialize the report header
     let reportContent = "T-SHIRT PRINTING CHECKLIST\n\n";
-    reportContent += "This report serves as a printing checklist for REDACTED SHIRTS.\n";
+    reportContent += "This report serves as a printing checklist for Redacted.\n";
     reportContent += "----------------------------------------------\n\n";
 
     let hasOrders = false; // Track if there are any orders
@@ -39,7 +39,7 @@ function main(workbook: ExcelScript.Workbook) {
 
             let orderAmount = 0;
             if (onhand < 4) {
-                orderAmount = 6 - onhand; // Calculate the order quantity
+                orderAmount = Math.min(4 - onhand, 4); // Ensures a max order of 4 polos per size
             }
 
             if (orderAmount > 0) {
@@ -69,11 +69,11 @@ function main(workbook: ExcelScript.Workbook) {
     console.log(reportContent);
 
     // Notify the user
-    //workbook.getApplication().showNotification("Supplier report for M&H Awards generated.");
+    // workbook.getApplication().showNotification("Supplier report for M&H Awards generated.");
 
     // Save report to a new worksheet
-    //const reportSheet = workbook.addWorksheet(`Supplier Report ${currentDate}`);
-    //const reportLines = reportContent.split("\n").map(line => [line]); // Convert text to rows
-    //reportSheet.getRange(`A1:A${reportLines.length}`).setValues(reportLines);
-    //reportSheet.getRange("A:A").getFormat().autofitColumns();
+    // const reportSheet = workbook.addWorksheet(`Supplier Report ${currentDate}`);
+    // const reportLines = reportContent.split("\n").map(line => [line]); // Convert text to rows
+    // reportSheet.getRange(`A1:A${reportLines.length}`).setValues(reportLines);
+    // reportSheet.getRange("A:A").getFormat().autofitColumns();
 }
