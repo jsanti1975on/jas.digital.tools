@@ -1,4 +1,9 @@
+# The course has updated to the CompTIA Security+ SY0-701
+- Author OTW
+- Bootcamp = Security+ SY0-701 Bootcamp
+- Link to bootcamp and Author information below
 
+[Bootcamp](https://hackersarise.thinkific.com/)
 
 
 
