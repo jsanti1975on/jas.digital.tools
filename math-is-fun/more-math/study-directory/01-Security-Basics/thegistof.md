@@ -1,10 +1,16 @@
-# Below is a link to foundational terms in the 1st week and chapter of CompTIA Security +
-[Security Controls](more-math/study-directory/01-Security-Basics/security-controls.md)
+# Foundational Terms for Week 1: CompTIA Security+
 
-### Example Security Control Code
+Below is a link to the foundational terms discussed in the first week and chapter of the CompTIA Security+ curriculum:
+
+- **Security Controls**: [Link to Security Controls](more-math/study-directory/01-Security-Basics/security-controls.md)
+
+## Example: Configuring a Security Control
+
+> This example demonstrates how to configure a security control in a system.  
+> *(Reminder: Follow up on RHEL for additional details.)*
 
 ```bash
-# Example of configuring a security control in the system 
+# Example of configuring a security control in the system
 sudo security-control --enable
 ```
 
