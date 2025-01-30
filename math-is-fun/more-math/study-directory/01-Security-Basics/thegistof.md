@@ -2,9 +2,8 @@
 
 Below is a link to the foundational terms discussed in the first week and chapter of the CompTIA Security+ curriculum:
 
-- **Security Controls**: [Link to Security Controls](more-math/study-directory/01-Security-Basics/security-controls.md)
+- **Security Controls**: [Link to Security Controls](security-controls.md)
 
-<span style="color:red">Security Controls</span>: [Link to Security Controls](more-math/study-directory/01-Security-Basics/security-controls.md)
 
 
 ## Example: Configuring a Security Control
