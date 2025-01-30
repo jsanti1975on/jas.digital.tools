@@ -10,7 +10,7 @@ Below is a link to the foundational terms discussed in the first week and chapte
 > *(Reminder: Follow up on RHEL for additional details.)*
 
 ```bash
-# Example of configuring a security control in the system
+====( Example of configuring a security control in the system )====
 sudo security-control --enable
 ```
 
