@@ -1,13 +1,15 @@
 ==========================(100)===================================================================|
 # The course has updated to the CompTIA Security+ SY0-701
-- Author OTW
+- Author: Occupy The Web 
 - Bootcamp = Security+ SY0-701 Bootcamp
-- Link to bootcamp and Author information below
+- Link to bootcamp and A.I. generated citation using MLA9
 
-# MLA Citation by owl.purdue.edu => fllow up on the possible editor ect. 
+# MLA Citation by owl.purdue.edu => Note possible editor ect. 
 Rice, Jake, et al. “Security+ SY0-701 Bootcamp.” Hacker Arise, Occupy The Web , hackers-arise.net/. Accessed 29 Jan. 2025. 
 
 [Bootcamp](https://hackersarise.thinkific.com/)
+
+==========================(100)===================================================================|
 
 
 
