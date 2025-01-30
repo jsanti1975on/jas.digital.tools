@@ -9,7 +9,11 @@ Rice, Jake, et al. “Security+ SY0-701 Bootcamp.” Hacker Arise, Occupy The We
 
 [Bootcamp](https://hackersarise.thinkific.com/)
 
-# more citation below
+## more citation below
+- blank
+- blank
+
+
 
 ==========================(100)===================================================================|
 
