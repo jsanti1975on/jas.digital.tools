@@ -1,9 +1,9 @@
 # Foundational Terms for Week 1: CompTIA Security+
 
-Below is a link to the foundational terms discussed in the first week and chapter of the CompTIA Security+ curriculum:
+Below is a link to the foundational terms discussed in the first week and chapter of the CompTIA Security+ 2025 curriculum:
 
 - **Security Controls**: [Link to Security Controls](security-controls.md)
-
+- **Works Cited**: [Link to directory works cited page](Link Me)
 
 
 ## Example: Configuring a Security Control
