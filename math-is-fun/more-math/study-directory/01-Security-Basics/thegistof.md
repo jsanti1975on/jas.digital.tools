@@ -1,4 +1,4 @@
-### Below is a link to foundational terms in the 1st week and chapter of CompTIA Security +
+# Below is a link to foundational terms in the 1st week and chapter of CompTIA Security +
 [Security Controls](more-math/study-directory/01-Security-Basics/security-controls.md)
 
 ### Example Security Control Code
