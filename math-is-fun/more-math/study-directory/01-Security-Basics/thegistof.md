@@ -37,3 +37,13 @@ The security controls implemented within the system are crucial for ensuring its
 
 These documents will help you understand the various strategies and protocols we use to protect our systems.
 ```
+
+### Stop Point: Pulling of this .md practice to practice bash scripting and blowing through Over-The-Wire Bandit challenge.
+
+I have completed the current section and am now preparing to begin the **Capture the Flag (CTF)** challenge.
+
+---
+
+## Starting the CTF Challenge
+
+The next section will
