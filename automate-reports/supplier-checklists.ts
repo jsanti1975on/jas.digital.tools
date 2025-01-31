@@ -69,7 +69,7 @@ function main(workbook: ExcelScript.Workbook) {
     console.log(reportContent);
 
     // Notify the user
-    // workbook.getApplication().showNotification("Supplier report for M&H Awards generated.");
+    // workbook.getApplication().showNotification("Supplier report for `redacted` generated.");
 
     // Save report to a new worksheet
     // const reportSheet = workbook.addWorksheet(`Supplier Report ${currentDate}`);
