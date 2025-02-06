@@ -5,8 +5,8 @@
 - Below is link for acronyms and terms
 > https://www.comptia.org/content/guide/information-technology-terminology#section3
 
-# *Acronyms => fact check* 
-[Nolen Square Bracket](https://youtu.be/7DEq6jMPhvY)
+# *Acronyms => fact check* CompTIA Security+ Acronyms - SY0-701 | YouTube Content Author Jean R
+[YouTube Content Author Jean R](https://youtu.be/7DEq6jMPhvY)
 
 
     
