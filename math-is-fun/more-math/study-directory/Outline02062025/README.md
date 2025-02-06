@@ -6,7 +6,7 @@ This repository is part of my ongoing Information Security studies. In Week 5, I
 ## 📂 Directory Structure
 ```bash
 /week-5-study-directory  
-│── /notes/                       # Detailed study notes  
+│── /notes/emojis/                # Detailed study notes  
 │── /cheat-sheets/acronyms/       # Quick reference guides  
 │── /practice-questions/          # Security+ and general security practice questions  
 │── /labs/                        # Hands-on security labs and exercises  
