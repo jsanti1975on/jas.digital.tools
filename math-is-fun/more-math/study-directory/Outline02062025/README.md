@@ -21,4 +21,20 @@ This repository is part of my ongoing Information Security studies. In Week 5, I
 - 🖥️ Networking security basics
 
 ## 🚀 How to Use This Repository
+1. Clone the repo
+```bash
+git clone https://github.com/your-username/your-repo-name.git
+cd your-repo-name
+```
+2. Navigate the folders based on study needs.
+3. Contribute or take notes as you progress.
 
+## 🛠️ Future Improvements
+- Add more practical labs
+- Include CTF (Capture the Flag) challenges
+- Expand cheat sheets
+
+## 📜 Resources
+- [Official CompTIA Security+ Objectives](https://www.comptia.org/)
+- [OWASP Top 10](https://owasp.org/www-project-top-ten/)
+- [NIST Cybersecurity Framework](https://www.nist.gov/cyberframework)
