@@ -1,5 +1,7 @@
 # Part 1 of Call List Project
 
+## Note to future self => Dont waste time on this garbage - get the Sec +
+
 ![CallLogUseme](https://github.com/user-attachments/assets/49a833f7-5e12-4757-a30f-0a5380fbe30e)
 
 ```vba
