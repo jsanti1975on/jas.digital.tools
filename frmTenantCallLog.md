@@ -228,5 +228,45 @@ Private Sub UserForm_Initialize()
     Next i
 End Sub
 ====
+use me 
 
+
+
+Option Explicit
+
+Private Sub UserForm_Initialize()
+    Dim ws As Worksheet
+    Dim lastRow As Long
+    Dim i As Long
+    
+    Set ws = ThisWorkbook.Sheets("CallLog")
+    
+    ' Get the last row in the CallLog sheet
+    lastRow = ws.Cells(ws.Rows.Count, "A").End(xlUp).Row
+    
+    ' Configure ListBox Properties
+    With lstCallLog
+        .Clear
+        .ColumnCount = 6
+        .ColumnWidths = "100,100,80,120,150,100" ' Adjust column widths as needed
+    End With
+
+    ' Add column headers manually using labels (adjust placement in the UserForm)
+    lblHeaderName.Caption = "Name"
+    lblHeaderPhone.Caption = "Phone"
+    lblHeaderContacted.Caption = "Contacted"
+    lblHeaderTimestamp.Caption = "Time Stamp"
+    lblHeaderNotes.Caption = "Notes"
+    lblHeaderUser.Caption = "User"
+    
+    ' Load call log data into the ListBox
+    For i = 2 To lastRow
+        lstCallLog.AddItem ws.Cells(i, 1).Value ' Name
+        lstCallLog.List(lstCallLog.ListCount - 1, 1) = ws.Cells(i, 2).Value ' Phone
+        lstCallLog.List(lstCallLog.ListCount - 1, 2) = ws.Cells(i, 3).Value ' Contacted Status
+        lstCallLog.List(lstCallLog.ListCount - 1, 3) = ws.Cells(i, 4).Value ' Timestamp
+        lstCallLog.List(lstCallLog.ListCount - 1, 4) = ws.Cells(i, 5).Value ' Notes
+        lstCallLog.List(lstCallLog.ListCount - 1, 5) = ws.Cells(i, 6).Value ' User
+    Next i
+End Sub
 
