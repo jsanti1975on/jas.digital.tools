@@ -7,7 +7,8 @@
 
 # *Acronyms => fact check* CompTIA Security+ Acronyms - SY0-701 | YouTube Content Author Jean R
 [YouTube Content Author Jean R](https://youtu.be/7DEq6jMPhvY)
-
+>https://youtu.be/7DEq6jMPhvY?t=1550
+>Author said United rather than Unified
 
     
 
