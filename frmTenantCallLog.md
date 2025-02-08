@@ -201,6 +201,32 @@ Private Sub lstCallLog_Click()
     txtNotes.Value = lstCallLog.List(selectedRow, 4)
 End Sub
 
-
+====
+Private Sub UserForm_Initialize()
+    Dim ws As Worksheet
+    Dim lastRow As Long
+    Dim i As Long
+    
+    Set ws = ThisWorkbook.Sheets("CallLog")
+    
+    ' Get the last row in the CallLog sheet
+    lastRow = ws.Cells(ws.Rows.Count, "A").End(xlUp).Row
+    
+    ' Clear the ListBox
+    lstCallLog.Clear
+    lstCallLog.ColumnCount = 6
+    lstCallLog.ColumnWidths = "100,100,80,120,150,100" ' Adjust as needed
+    
+    ' Load call log data into the ListBox
+    For i = 2 To lastRow
+        lstCallLog.AddItem ws.Cells(i, 1).Value ' Name
+        lstCallLog.List(lstCallLog.ListCount - 1, 1) = ws.Cells(i, 2).Value ' Phone
+        lstCallLog.List(lstCallLog.ListCount - 1, 2) = ws.Cells(i, 3).Value ' Contacted Status
+        lstCallLog.List(lstCallLog.ListCount - 1, 3) = ws.Cells(i, 4).Value ' Timestamp
+        lstCallLog.List(lstCallLog.ListCount - 1, 4) = ws.Cells(i, 5).Value ' Notes
+        lstCallLog.List(lstCallLog.ListCount - 1, 5) = ws.Cells(i, 6).Value ' User
+    Next i
+End Sub
+====
 
 
