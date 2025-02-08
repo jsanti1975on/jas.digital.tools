@@ -147,3 +147,35 @@ Private Sub cmdCancel_Click()
     Unload Me
 End Sub
 ```
+=====
+
+
+
+Private Sub cmdExportCSV_Click()
+    Dim ws As Worksheet
+    Dim lastRow As Long
+    Dim rng As Range
+    Dim fileName As String
+    
+    Set ws = ThisWorkbook.Sheets("CallLog")
+    lastRow = ws.Cells(ws.Rows.Count, "A").End(xlUp).Row
+    Set rng = ws.Range("A1:F" & lastRow)
+    
+    ' Define file name and location
+    fileName = ThisWorkbook.Path & "\CallLog_" & Format(Now, "YYYY-MM-DD") & ".csv"
+    
+    ' Save as CSV
+    rng.Copy
+    Workbooks.Add
+    ActiveSheet.Paste
+    ActiveWorkbook.SaveAs fileName, xlCSV
+    ActiveWorkbook.Close False
+    
+    MsgBox "Call Log exported successfully to " & fileName, vbInformation, "Export Complete"
+End Sub
+
+
+
+
+
+
