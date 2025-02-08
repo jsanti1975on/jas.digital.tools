@@ -174,7 +174,32 @@ Private Sub cmdExportCSV_Click()
     MsgBox "Call Log exported successfully to " & fileName, vbInformation, "Export Complete"
 End Sub
 
-
+=======
+Private Sub lstCallLog_Click()
+    Dim selectedRow As Integer
+    
+    ' Ensure a selection is made
+    If lstCallLog.ListIndex = -1 Then Exit Sub
+    
+    ' Get the selected row index
+    selectedRow = lstCallLog.ListIndex
+    
+    ' Populate form fields
+    cmbTenantList.Value = lstCallLog.List(selectedRow, 0) ' Name
+    txtPhoneNumber.Value = lstCallLog.List(selectedRow, 1) ' Phone
+    
+    ' Check contacted status
+    If lstCallLog.List(selectedRow, 2) = "Spoke to Tenant" Then
+        optSpokeToTenant.Value = True
+        txtNotes.Enabled = True
+    ElseIf lstCallLog.List(selectedRow, 2) = "Left Message" Then
+        optLeftMessage.Value = True
+        txtNotes.Enabled = False
+    End If
+    
+    ' Load existing notes (if any)
+    txtNotes.Value = lstCallLog.List(selectedRow, 4)
+End Sub
 
 
 
