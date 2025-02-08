@@ -1,6 +1,19 @@
 # Part 1 of Call List Project
 
 ## Note to future self => Dont waste time on this garbage - get the Sec +
+Redirect Cyber Lab Projects
+
+## Demo Authentication
+- EAP
+- 802.1X
+- Single sign-on (SSO)
+- Security Assertions Markup Language (SAML)
+- OAuth
+- OpenID
+- Kerberos
+
+## Identity Management and Authentication
+- Harden Authentication
 
 ![CallLogUseme](https://github.com/user-attachments/assets/49a833f7-5e12-4757-a30f-0a5380fbe30e)
 
