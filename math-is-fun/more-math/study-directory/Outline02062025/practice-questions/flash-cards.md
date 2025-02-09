@@ -32,10 +32,6 @@ Example:
 CN=WIDGETWEB, OU=Marketing, O=Widget, C=UK, DC=widget, DC=foo
 ```
 
-```yaml
-
----
-
 ## Flashcard 5  
 **Q:** What network port does LDAP use by default?  
 **A:** LDAP uses port **389** by default.
