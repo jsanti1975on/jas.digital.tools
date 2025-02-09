@@ -27,49 +27,49 @@
 - **C** (Country)  
 - **DC** (Domain Component)  
 
-Example:  
-```bash
-CN=WIDGETWEB, OU=Marketing, O=Widget, C=UK, DC=widget, DC=foo
-```
+> Example:  
+> CN=WIDGETWEB, OU=Marketing, O=Widget, C=UK, DC=widget, DC=foo
 
 ## Flashcard 5  
 **Q:** What network port does LDAP use by default?  
-**A:** LDAP uses port **389** by default.
+**A:** 389 
+
+--
 
 ## Flashcard 6  
 **Q:** Why is LDAP insecure by default?  
-**A:** LDAP transmissions are plaintext, making them vulnerable to sniffing and on-path attacks.
+**A:** LDAP transmissions are plaintext, making them vulnerable to sniffing and on-path attacks.  
 
 ---
 
 ## Flashcard 7  
 **Q:** What are the authentication methods available in LDAP?  
 **A:**  
-1. **No Authentication** – Anonymous access is granted.  
-2. **Simple Bind** – DN and password are sent in plaintext.  
-3. **SASL (Simple Authentication and Security Layer)** – Uses a supported authentication mechanism (e.g., Kerberos).  
-4. **LDAPS (LDAP Secure)** – Uses TLS encryption (port 636).  
+- No Authentication (Anonymous Access)  
+- Simple Bind (DN and password sent in plaintext)  
+- SASL (Uses Kerberos or other mechanisms)  
+- LDAPS (Uses TLS encryption, port 636)  
 
 ---
 
 ## Flashcard 8  
 **Q:** What is the recommended secure authentication method for LDAP?  
-**A:** LDAPS (LDAP Secure) using **port 636**, which encrypts credentials using TLS.  
+**A:** LDAPS (LDAP Secure) using **port 636** with TLS encryption.  
 
 ---
 
 ## Flashcard 9  
 **Q:** What command in LDAP can enforce encryption and message integrity?  
-**A:** The **STARTTLS** command can require encryption (sealing) and message integrity (signing).  
+**A:** STARTTLS  
 
 ---
 
 ## Flashcard 10  
 **Q:** What security measures should be taken for an LDAP directory server?  
 **A:**  
-- Disable **anonymous and simple authentication** if secure access is required.  
-- Implement **access control policies** for read-only and read/write access.  
-- Block LDAP **port 389** from public access using a firewall.  
-- Allow LDAP access **only from authorized IPs** for internet-integrated services.  
+- Disable anonymous and simple authentication.  
+- Implement access control policies for read-only and read/write access.  
+- Block LDAP port **389** from public access using a firewall.  
+- Allow LDAP access only from authorized IPs for internet-integrated services.
 
-```
+
