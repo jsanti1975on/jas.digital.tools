@@ -1,5 +1,7 @@
 # ASCII representation of an X.500 directory tree
 
+## This structure provides a clear hierarchical view of the organizations, departments, users, and resources within the directory service.
+
 ```plaintext
 Root (C=US)
 │
