@@ -118,12 +118,14 @@ This guide provides step-by-step instructions for setting up an **Enterprise Cer
 #### 🖥️ Linux (RHEL) Clients:
 - [ ] Export **Root CA Certificate** (`.cer` file) from `ca-server`
 - [ ] Copy the certificate to Linux machine (`scp` or USB)
-- [ ] Install CA Certificate:  
-  ```bash
+- [ ] Install CA Certificate:
+  
+```bash
   sudo cp Orkidz-RootCA.cer /etc/pki/ca-trust/source/anchors/
   sudo update-ca-trust extract
 ```
-# 📌 6. Test Certificate Deployment
+
+#### 📌 6. Test Certificate Deployment
 - [ ] Use `openssl` to verify **CA** trust on Linux
 - [ ] use `openssl s_client -connect dc-terete.orkidz-west.arpa:636 -CAfile /etc/pki/ca-trust/source/anchors/Orkidz-RootCA.cer`
 - [ ] Validate certificate presence on Windows via `certlm.msc`
