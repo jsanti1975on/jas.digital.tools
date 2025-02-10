@@ -137,6 +137,7 @@ This guide provides step-by-step instructions for setting up an **Enterprise Cer
 - ✅ Securing LDAP & Remote Desktop with Certificates
 
 ## 📌 Next Steps
-🔹 Configure Online Certificate Status Protocol (OCSP)
-🔹 Implement Certificate Revocation List (CRL)
-🔹 Integrate with RADIUS for 802.1X authentication
+- 🔹 Configure Online Certificate Status Protocol (OCSP)
+- 🔹 Implement Certificate Revocation List (CRL)
+- 🔹 Integrate with RADIUS for 802.1X authentication
+
