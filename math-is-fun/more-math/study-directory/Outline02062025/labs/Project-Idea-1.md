@@ -65,5 +65,80 @@ This checklist aligns with **Week 5: Identity and Access Management Study** in I
 # **Breaking down the project.**
 
 ## **Host 1**: Windows Server 2022 (Active Directory, Domain Controller, Certificate Authority)
-- *Certificate Authority* => Configure 
+- *Certificate Authority* => Configure
 
+# ✅ Windows Server 2022 - Enterprise CA Setup Guide
+
+## 🎯 Purpose of Demonstration
+This guide provides step-by-step instructions for setting up an **Enterprise Certificate Authority (CA)** on a **dedicated VM** in a **Windows Server 2022 Active Directory (AD) environment**. This CA will issue **SSL/TLS, authentication, and encryption certificates** for **Windows and Linux (RHEL) machines** within the **orkidz-west.arpa** domain.
+
+## 🛠️ Prerequisites
+✔️ Windows Server 2022 VM  
+✔️ Joined to **orkidz-west.arpa** domain  
+✔️ Administrator privileges  
+✔️ Static IP Address  
+✔️ Active Directory Certificate Services (AD CS) installation media  
+✔️ DNS configured  
+
+---
+
+## 🚀 Step-by-Step Setup
+
+### 📌 1. Prepare the Windows Server 2022 VM
+- [ ] **Set a Static IP** (e.g., `192.168.0.X`)
+- [ ] **Join the domain** `orkidz-west.arpa`
+- [ ] **Rename the server** (e.g., `ca-server.orkidz-west.arpa`)
+- [ ] **Enable Remote Desktop** (for easier management)
+
+### 📌 2. Install Active Directory Certificate Services (AD CS)
+- [ ] Open **Server Manager** → **Manage** → **Add Roles and Features**
+- [ ] Select **Active Directory Certificate Services (AD CS)**
+- [ ] Choose **Enterprise CA**
+- [ ] Select **Certification Authority (CA)** role
+
+### 📌 3. Configure the CA Role
+- [ ] **Choose Enterprise CA**
+- [ ] **Set as Root CA**
+- [ ] **Create a new private key**
+- [ ] **Set Cryptographic Options** (2048-bit key, SHA256)
+- [ ] **Set CA Name** (e.g., `Orkidz-RootCA`)
+- [ ] **Define Validity Period** (e.g., 5 or 10 years)
+- [ ] **Confirm and Install**
+
+### 📌 4. Configure Certificate Templates and Auto-Enrollment
+- [ ] Open **Certification Authority MMC** (`certsrv.msc`)
+- [ ] Enable **Auto-Enrollment** via Group Policy (`gpedit.msc`)
+- [ ] Duplicate **Computer Certificate Template** for issuing to Linux & Windows machines
+- [ ] Allow **Domain Computers & Domain Users** to enroll
+
+### 📌 5. Issue Certificates for Windows and Linux Authentication
+#### 🖥️ Windows Clients:
+- [ ] Run `certmgr.msc` and request a certificate from AD CA
+
+#### 🖥️ Linux (RHEL) Clients:
+- [ ] Export **Root CA Certificate** (`.cer` file) from `ca-server`
+- [ ] Copy the certificate to Linux machine (`scp` or USB)
+- [ ] Install CA Certificate:  
+  ```bash
+  sudo cp Orkidz-RootCA.cer /etc/pki/ca-trust/source/anchors/
+  sudo update-ca-trust extract
+```
+# 📌 6. Test Certificate Deployment
+- [ ] Use `openssl` to verify **CA** trust on Linux
+```bash
+openssl s_client -connect dc-terete.orkidz-west.arpa:636 -CAfile /etc/pki/ca-trust/source/anchors/Orkidz-RootCA.cer
+```
+- Validate certificate presence on Windows via `certlm.msc`
+
+## 🎯 Demonstration & Use Cases
+
+- ✅ Windows Authentication with Certificates
+- ✅ Linux Machine Authentication using CA
+- ✅ SSL/TLS for Web Apps and Services
+- ✅ Securing LDAP & Remote Desktop with Certificates
+
+## 📌 Next Steps
+
+🔹 Configure Online Certificate Status Protocol (OCSP)
+🔹 Implement Certificate Revocation List (CRL)
+🔹 Integrate with RADIUS for 802.1X authentication
