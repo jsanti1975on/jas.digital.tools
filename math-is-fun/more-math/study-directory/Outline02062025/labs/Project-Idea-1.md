@@ -125,20 +125,16 @@ This guide provides step-by-step instructions for setting up an **Enterprise Cer
 ```
 # 📌 6. Test Certificate Deployment
 - [ ] Use `openssl` to verify **CA** trust on Linux
-```bash
-openssl s_client -connect dc-terete.orkidz-west.arpa:636 -CAfile /etc/pki/ca-trust/source/anchors/Orkidz-RootCA.cer
-```
-- Validate certificate presence on Windows via `certlm.msc`
+- [ ] use `openssl s_client -connect dc-terete.orkidz-west.arpa:636 -CAfile /etc/pki/ca-trust/source/anchors/Orkidz-RootCA.cer`
+- [ ] Validate certificate presence on Windows via `certlm.msc`
 
 ## 🎯 Demonstration & Use Cases
-
 - ✅ Windows Authentication with Certificates
 - ✅ Linux Machine Authentication using CA
 - ✅ SSL/TLS for Web Apps and Services
 - ✅ Securing LDAP & Remote Desktop with Certificates
 
 ## 📌 Next Steps
-
 🔹 Configure Online Certificate Status Protocol (OCSP)
 🔹 Implement Certificate Revocation List (CRL)
 🔹 Integrate with RADIUS for 802.1X authentication
