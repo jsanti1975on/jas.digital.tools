@@ -61,3 +61,9 @@ Set up an authentication system that integrates Windows Active Directory (AD) wi
 
 ---
 This checklist aligns with **Week 5: Identity and Access Management Study** in Informtion Security 
+
+# **Breaking down the project.**
+
+## **Host 1**: Windows Server 2022 (Active Directory, Domain Controller, Certificate Authority)
+- *Certificate Authority* => Configure 
+
