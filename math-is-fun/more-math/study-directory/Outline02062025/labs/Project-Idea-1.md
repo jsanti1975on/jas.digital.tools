@@ -1,90 +1,63 @@
-# OAuth Flow (Authorization Code Grant) Cyber-Range Project
+# Identity and Access Management Lab Setup (Week 5)
 
-## ✅ Infrastructure Setup
-- [ ] **ESXi Hosts**  
-  - [ ] Host 1: Primary ESXi host (Domain Controllers for three domains)  
-  - [ ] Host 2: Virtual Machines (OAuth service & OAuth clients)  
-  - [ ] Host 3: Backup/additional resources  
-  - [ ] Host 4: Additional infrastructure support  
+## **Objective**
+Set up an authentication system that integrates Windows Active Directory (AD) with Red Hat Linux machines hosted on ESXi. Demonstrate identity and access management (IAM) principles using domain authentication, role-based access control (RBAC), and multi-factor authentication (MFA).
 
-- [ ] **Networking Equipment**  
-  - [ ] 3 Cisco Switches  
-  - [ ] 2 Cisco Routers  
-  - [ ] Ensure VLANs are configured for segmentation  
+## **Lab Infrastructure**
+### **ESXi Hosts**
+- **Host 1**: Windows Server 2022 (Active Directory, Domain Controller, Certificate Authority)
+- **Host 2**: Red Hat Enterprise Linux (RHEL) machines for domain authentication
+- **Host 3**: Additional VMs for testing IAM configurations
+- **Host 4**: Backup and monitoring services
 
-- [ ] **Domains & Active Directory Setup**  
-  - [ ] Domain 1: Main authentication domain  
-  - [ ] Domain 2: External domain (trusted or federated)  
-  - [ ] Domain 3: External domain (trusted or federated)  
+### **Networking Components**
+- **3 Cisco Switches**
+- **2 Cisco Routers**
+- VLANs configured for segmentation of authentication traffic
 
-## ✅ Active Directory Configuration
-- [ ] Create **Global Security Groups** in each domain  
-- [ ] Assign appropriate permissions to OAuth-protected resources  
-- [ ] Configure **trust relationships** between domains (if applicable)  
+## **Lab Configuration Checklist**
+### **1. Windows Domain Setup**
+- [ ] Install and configure **Windows Server 2022** as a Domain Controller (DC)
+- [ ] Set up **Active Directory (AD)**
+- [ ] Configure **Group Policy (GPO)** for user access control
+- [ ] Implement **Role-Based Access Control (RBAC)** using AD security groups
+- [ ] Configure **Certificate Authority (CA)** for authentication and encryption
 
-## ✅ OAuth Provider & Authentication Setup
-- [ ] Deploy **OAuth Authorization Server**  
-  - [ ] Use **Keycloak**, **Auth0**, **Okta**, or **ADFS**  
-  - [ ] Integrate with **Active Directory** as an identity provider  
+### **2. Red Hat Linux Integration with AD**
+- [ ] Join **RHEL machines to Active Directory** using `realmd`, `sssd`, or `winbind`
+- [ ] Configure **Kerberos authentication** for AD integration
+- [ ] Set up **LDAP authentication** with AD as the identity provider
+- [ ] Configure **sudo rules** for RBAC based on AD security groups
 
-- [ ] Deploy **OAuth Client Applications**  
-  - [ ] Custom web app (Node.js, Java Spring Boot, PHP, etc.)  
-  - [ ] Third-party OAuth-enabled app (Google API, Slack API, GitHub API)  
+### **3. Authentication & Access Management**
+- [ ] Implement **Single Sign-On (SSO)** for Windows and Linux systems
+- [ ] Enforce **Multi-Factor Authentication (MFA)** for Windows and Linux users
+- [ ] Test **LDAP and Kerberos authentication** on Linux machines
+- [ ] Validate **user logins and permissions** across domains
 
-## ✅ OAuth Flow (Authorization Code Grant)
-- [ ] **Authorization Request**: Redirect user to OAuth Authorization Server  
-- [ ] **User Authentication**: Authenticate using Active Directory  
-- [ ] **User Consent**: Grant permission for OAuth client  
-- [ ] **Authorization Code**: Redirect back with code  
-- [ ] **Token Exchange**: Exchange code for access token  
-- [ ] **Resource Access**: Use token to access protected resources  
+### **4. Security Hardening & Monitoring**
+- [ ] Enable **audit logs** for authentication events
+- [ ] Configure **fail2ban** or similar tool for Linux login protection
+- [ ] Set up **Windows Event Viewer** for monitoring authentication attempts
+- [ ] Implement **SIEM solution (Splunk/ELK)** for centralized logging
 
-## ✅ Security & Network Tools
-- [ ] **Traffic Monitoring**: Wireshark  
-- [ ] **SSL/TLS Testing**: OpenSSL  
-- [ ] **Security Scanning**: Nessus or Qualys  
-- [ ] **VPN Simulation**: VPN Software (if needed)  
+### **5. Testing & Validation**
+- [ ] Test **Windows domain authentication** from Linux machines
+- [ ] Verify **GPO policies apply** to domain-joined Linux machines
+- [ ] Check **access control restrictions** for different user roles
+- [ ] Perform **penetration testing** to evaluate authentication security
+- [ ] Document **findings and best practices** for IAM security
 
-## ✅ Certificate Management
-- [ ] Deploy **Public Key Infrastructure (PKI)**  
-- [ ] Issue SSL/TLS certificates for OAuth token encryption  
-- [ ] Use **OpenSSL** or **Microsoft CA**  
+## **Optional Enhancements**
+- [ ] Deploy **FreeIPA** for centralized Linux authentication
+- [ ] Implement **Azure AD Sync** for hybrid authentication
+- [ ] Integrate **SSH key-based authentication** for secure access
 
-## ✅ Web & Application Servers
-- [ ] **Web Server Deployment**  
-  - [ ] Apache/Nginx (for OAuth client web app)  
-  - [ ] Tomcat/Jetty (if Java-based OAuth client)  
-  - [ ] Node.js/Express (for API-based OAuth client)  
+## **Deliverables**
+- **Network topology diagram** (Visio, Draw.io, or Lucidchart)
+- **Configuration documentation** for AD and Linux authentication
+- **Access control policy report** detailing IAM implementation
+- **Security assessment findings** on authentication setup
 
-## ✅ Database & Data Storage
-- [ ] **Database for OAuth Authentication**  
-  - [ ] MySQL / PostgreSQL / MariaDB  
-  - [ ] MongoDB (for unstructured data)  
-
-## ✅ Monitoring & Logging
-- [ ] **Centralized Logging**: ELK Stack (Elasticsearch, Logstash, Kibana)  
-- [ ] **Real-time Monitoring**: Prometheus/Grafana  
-- [ ] **Security Auditing**: Splunk  
-
-## ✅ Networking & Infrastructure Management
-- [ ] **Network Simulation**: Cisco Packet Tracer / GNS3  
-- [ ] **vSphere Management**: vSphere Client  
-- [ ] **PowerShell Automation**: Automate domain and security group management  
-
-## ✅ Testing & Validation
-- [ ] **OAuth API Testing**: Postman  
-- [ ] **OAuth Playground**: Google OAuth 2.0 Playground  
-- [ ] **JWT Debugging**: JWT.io  
-
-## ✅ Backup & Recovery
-- [ ] **ESXi VM Backup**: Veeam Backup & Replication  
-- [ ] **Windows Server Backup**  
-
-## ✅ Additional Tools & Documentation
-- [ ] **Diagram Network Setup**: Microsoft Visio / Lucidchart / draw.io  
-- [ ] **Training Materials**: Vendor guides (Cisco, VMware, Microsoft)  
-
-## ✅ Optional Enhancements
-- [ ] **Multi-Factor Authentication (MFA)**  
-- [ ] **Simulate OAuth Attacks** (Token Theft, Replay Attacks)  
-
+---
+This checklist aligns with **Week 5: Identity and Access Management Study** in Informtion Security 
